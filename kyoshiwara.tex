@@ -1,0 +1,89 @@
+\section{The generating series of the capped cycles}
+
+In this section, we show that the generating series of the `capped' cycles $C_n^c$ gives rise to a modular form, extending Theorem~\ref{KM90} to a lift of the full cohomology $H^2(X)$ of $X$. In particular, we give our new proof of the theorem of Hirzebruch and Zagier and show how a remarkable feature of their proof appears from our point of view.
+
+
+\subsection{The theta series associated to $\varphi_2$}
+
+We define the theta series
+\[
+\theta_{\varphi_2}(\tau,\calL) = \sum_{x \in \calL} \varphi_2(x,\tau,z).
+\]
+ In the following we will often drop the argument $\calL = L+h$. For $n \in \Q$, we also set 
+\[
+\varphi_2(n) = \sum_{n \in \calL_n, x \ne0} \varphi_2(x).
+\]
+Clearly, $\theta_{\varphi_2}(\tau,\calL)$ and $\varphi_2(n)$ descend to closed differential $2$-forms on $X$. Furthermore, $\theta_{\varphi_2}(\tau,\calL)$ is a non-holomorphic modular form in $\tau$ of weight $2$ for the principal congruence subgroup $\G(N)$. In fact, for $\mathcal{L} = L$ as in Example~\ref{HZex}, $\theta_{\varphi_2}(\tau,\calL)$ transforms like a form for $\G_0(d)$ of nebentypus. 
+
+\begin{theorem}[Kudla-Millson \cite{KM90}]\label{KM90}
+We have
+\[
+[\theta_{\varphi_2}(\tau)] =  -\frac{1}{2\pi}\delta_{h0} [\omega] + \sum_{n>0} \PD[C_n] q^n \in H^2(X,\Q) \otimes M_2(\G(N)).
+\]
+That is, for any \bf{closed} $2$-form $\eta$ on $X$ with compact support,
+\[
+\Lambda(\eta,\tau) := \int_X \eta \wedge \theta_{\varphi_2}(\tau,\calL)= -\frac{1}{2\pi}\delta_{h0} \int_X \eta \wedge \omega + \sum_{n>0} \left( \int_{C_n} \eta \right)q^n.
+\]
+Here $\delta_{h0}$ is Kronecker delta, and $\omega$ is the K{\"a}hler form on $D$ normalized such that its restriction to the base point is given by $\omega_{13}\wedge \omega_{14}+\omega_{23}\wedge \omega_{24}$. 
+We obtain a map
+\begin{equation}
+\Lambda: H_c^{2}(X,\C) \to M_{2}(\G(N))
+\end{equation}
+from the cohomology with compact supports to the space of holomorphic modular forms of weight $2$ for the principal congruence subgroup $\G(N) \subset \SL_2(\Z))$. Alternatively, for $C$ an absolute $2$-cycle in $X$ defining a class in $H_2(X,\Z)$, the lift $\Lambda(C,\tau)$ is given by \eqref{KM-id} with $C_0$ the class given by $-\frac{1}{2\pi}\delta_{h0} [\omega]$.
+\end{theorem}
+
+
+The key fact for the proof of the Fourier expansion is that for $n>0$, the form $\varphi_2(n)$ is a Poincar\'e dual form of $C_n$, while $\varphi_2(n)$ is exact for $n \leq 0$, see also Section~\ref{currents}. 
+
+
+
+
+
+
+
+
+\subsection{The restrictions of the global theta functions}
+
+
+\begin{theorem}\label{restriction}
+
+The differential forms $\theta_{\varphi_2}(\calL_V)$ and $\theta_{\psi_1}(\calL_V)$ on $X$ extend to the Borel-Serre compactification $\overline{X}$. More precisely, for the restriction $i_P^{\ast}$ to the boundary face $e'(P)$ of $\overline{X}$, we have
+\[
+i_P^{\ast} \theta_{\varphi_2}(\calL_V) = \theta^P_{\varphi_{1,1}}(\calL_{W_P}) \qquad \text{and} \qquad i_P^{\ast} \theta_{\psi_1}(\calL_V) =  \theta^P_{\psi_{0,1}}(\calL_{W_P}). 
+\]
+\end{theorem}
+
+\begin{proof}
+The restriction of $\theta_{\varphi_2}(\calL_V)$ is the theme (in much greater generality) of \cite{FMres}. For $\theta_{\psi_1}(\calL_V)$ one proceeds in the same way. In short, one detects the boundary behaviour of the theta functions by switching to a mixed model of the Weil representation. For a model calculation see the proof of Theorem~\ref{psitilderes} below. 
+ \begin{comment}
+ We assume for simplicity that $L = \Z u + L_W + \Z u'$ and that $h=0$. We first note that it suffices to consider the limit $t \to \infty$ for $z=z(t,0,0)$.  We have for the Gaussian $\varphi_0(x,z) = \exp\left(-\pi[ t^{-2}y_1^2+ 2q(x')+t^2y_1'^2]\right)$ with $x = y_1u+x'+y_1'u' \in V$, where $x' \in W$. Hence when taking the limit $t \to \infty$ all components of $\theta(\tau,\psi_1^V,\calL_V)$ vanish unless $y'=0$. We can also ignore the summation over $L_W$ for the moment, since it is unaffected by $t$. One then applies Poisson summation on the sum over $y_1$ to apply the result. 
+Hence it suffices to consider for fixed $x' \in W$ the sum
+\begin{align*} 
+\sum_{k \in \Z} \psi(ku+x',z(t,s,w)) & = 
+\sum_{k \in \Z} -\frac12t^{-1}k(x,x(s)) \exp\left(-\pi[ t^{-2}k^2+ 2q(x')]\right) \frac{dt}{t}  \\
+& + \sum_{k \in \Z} \frac12t^{-2}k^2\exp\left(-\pi[ t^{-2}k^2+ 2q(x')]\right)  \frac{1}{\sqrt{2}} \frac{dw_3}{ts?} \\
+&+ \sum_{k \in \Z} -(x,x'(s))(x,x(s)) \exp\left(-\pi[ t^{-2}k^2+ 2q(x')]\right)  \frac{1}{\sqrt{2}} \frac{dw_2}{ts?} \\
+& + \sum_{k \in \Z} -\frac12t^{-1}k(x,x'(s) \exp\left(-\pi[ t^{-2}k^2+ 2q(x')]\right) {ds}.
+\end{align*}
+Applying Poisson summation then yields
+\begin{align*} 
+\sum_{k \in \Z} \psi(ku+x',z(t,s,w)) & = 
+\sum_{k \in \Z} -\frac12tk(x,x(s)) \exp\left(-\pi[ t^{2}k^2+ 2q(x')]\right) {dt}  \\
+& + \sum_{k \in \Z} \frac12(2t^{2}k^2-\frac1{\pi}) \exp\left(-\pi[ t^{2}k^2+ 2q(x')]\right)  \frac{1}{\sqrt{2}} \frac{dw_3}{s?} \\
+&+ \sum_{k \in \Z} -(x,x'(s))(x,x(s)) \exp\left(-\pi[ t^{2}k^2+ 2q(x')]\right)  \frac{1}{\sqrt{2}} \frac{dw_2}{s?} \\
+& + \sum_{k \in \Z} -\frac12t^2k(x,x'(s)) \exp\left(-\pi[ t^{2}k^2+ 2q(x')]\right) {ds}.
+\end{align*}
+Now taking the limit $t \to \infty$ gives the claim. {\bf CHECK THE SIGN!}
+\end{comment}
+\end{proof}
+
+We conclude by Proposition~\ref{globalholomorphic2}
+
+\begin{theorem}\label{globalexact}
+
+The restriction of $\theta_{\varphi_2}(\calL_V)$ to the boundary of $\overline{X}$ is exact and
+\[
+i_P^{\ast} \theta_{\varphi_2}( \calL_V) = d\left(  \theta^P_{\phi_{0,1}}(\calL_{W_P}) \right). 
+\]
+\end{theorem}
+

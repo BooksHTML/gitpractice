@@ -1,0 +1,47 @@
+\subsection{Linking numbers in Sol} \label{generaltheoryoflink}
+
+
+In the introduction we defined the linking number of two two disjoint homologically trivial $1$-cycles $a$ and $b$ in a closed $3$-manifold $M$ as $\Lk(a,b) = \langle A,b \rangle$, where $A$ is any rational $2$-chain in $M$ with boundary $a$. Since $b$ defines a trivial homology class in $M$, the link is well-defined, ie, does not depend on the choice of $A$. 
+
+We let $M$ be the Sol manifold as before realized as in Section~\ref{rat-cap11} via \eqref{glueing} and consider the case when $a$ and $b$ are two contained in two torus fibers. Then by the previous section they are homologically trivial. If $a$ and $b$ are contained in the same fiber we move $b$ to the right (i.e. in the direction of positive $s$)  to a nearby fiber. We take $a,b \in H_1(T^2,\Z)$, and in this section we are allowed to confuse $a$ and $b$ with their representatives in the lattice $\Z^2$ and the unique closed geodesic in $T^2$ passing through the origin that represents them. We will write for the image of $a$ and $b$ in $\R \times T^2$ and $M$ $a=a(0)=0 \times a$ and $b=b(\eps)= \eps \times b$. Our goal is to compute the linking number $Lk(a, b(\epsilon))$. By the explicit construction of the cap $A$ in Section~\ref{rat-cap11} we obtain
+
+\begin{lemma}
+ \[
+ Lk(a,b(\epsilon)) = M(c) \cdot b(\epsilon) = c(\epsilon) \cdot b(\epsilon)= c \cdot b.
+ \] 
+Here $c$ is the rational one cycle obtained by solving $(f^{-1} - I) (c) =a$
+and $M(c)$ is the (rational) monodromy $2$-chain associated to $c$ (see above) with boundary $\partial M(c) = (f^{-1} - I) (c) =a$. Here the first $\cdot$ is the intersection of 
+chains in $M$, the next $\cdot$ is the intersection number of $1$-cycles in the fiber $\epsilon \times T^2$ and the last $\cdot$ is the intersection number of $1$-cycles in $0 \times T^2$. 
+ \end{lemma}
+
+Noting that this last intersection number coincides with the intersection number of the underlying homology classes which in term coincides with the symplectic form $\langle \cdot, \cdot \rangle$ on $H_1(T^2,\Q)$ we have found our desired formula for the linking number.
+\begin{theorem}\label{linkSol}
+$ Lk(a, b(\epsilon)) = \langle (f^{-1} - I)^{-1} (a), b \rangle.$
+\end{theorem}
+
+It is a remarkable fact that there is a simple formula involving only the action of the
+glueing homeomorphism $f \in  \SL(2,\Z)$ on $H_1(T^2, \Z)$ for linking numbers for $1$-cycles contained in fiber tori $T^2$ of in Sol (unlike the case of linking numbers in $\R^3$). 
+
+This immediately leads to an explicit formula for the numbers $Lk(\partial C_n, \partial C_m)$. Using Lemma~\ref{LemmaB} we obtain
+
+\begin{theorem}\label{LinkCnCm} 
+Let $g = (f^{-1} - I)^{-1}$. \bf{Then}
+ \[
+ Lk( (\partial C_n)_P, (\partial C_m)_P) = \sum_{ \substack{x\in \G_M \back \mathcal{L}_W \\ (x,x)=2n}} \sum_{\substack{x'\in \G_M \back \mathcal{L}_W \\ (x,x)=2m}} (\min_{\lambda \in \Lambda_W}  {\hspace{-5pt}'}
+ |(\lambda,x)|) (\min_{\mu \in \Lambda_W}  {\hspace{-5pt}'}
+|(\mu,x')|) \langle g(Jx),Jx' \rangle. 
+\]
+Here $Jx$ is properly oriented primitive vector in $\Lambda_W$ such that $(Jx,x)=0$. 
+ \end{theorem}
+
+ \begin{example}\label{LinkCnCmex} 
+We consider the integral skew Hermitian matrices in Example~\ref{HZex}. Let $u= \kzxz{\sqrt{p}}{0}{0}{0}$, so that $W = \{ \kzxz{0}{\la}{-\la'}{0};\; \la \in K \} \simeq K$. The symplectic form on $K$ is given by $\langle \la, \mu \rangle = \frac{1}{\sqrt{p}} (\la \mu' - \la'\mu)$. The action of the unipotent radical $N= \left\{ n(\la)= \kzxz{1}{\la}{0}{1} \right\}$ on a vector $\mu \in K$ is now slightly different, namely, $n(\la) \mu = \mu + \langle \la, \mu \rangle u$. Hence in these coordinates, $\partial C_{\mu}$ is given by the image of the line $\R \mu = \{\la \in K_\R; \; \langle \la, \mu \rangle =0 \}$, and $(\min'_{\lambda \in \mathcal{O}_K}  
+ |\langle \la, \mu \rangle|)\mu$ is a primitive generator in $\mathcal{O}_K$ for that line. We let $\eps$ be a generator of $U_+$, the totally positive units in $\mathcal{O}_K$, and we assume that the glueing map $f$ is realized by multiplication with $\eps'$. For $d \equiv 1 \pmod{4}$ a prime and $m=1$, $C_1$ has only component arising from $x =1 \in K$ and $C_1 \simeq \SL_2(\Z) \back \h$. Then Theorem~\ref{LinkCnCm} becomes (the $\min'$-term is now wrt $\langle\,,\, \rangle$)
+\[
+ Lk( (\partial C_n)_P, (\partial C_1)_P) = 
+ 2 \sum_{ \substack{\mu \in U_+ \back \mathcal{O}_K\\ \mu\mu'=n, \mu \gg 0}} \left\langle \tfrac{\mu}{\eps-1}, 1 \right\rangle = 2\sum_{ \substack{\mu \in U_+ \back \mathcal{O}_K\\ \mu\mu'=n, \mu \gg0}}  = \frac{2}{\sqrt{p}}\frac{\mu+\mu'\eps}{\eps-1}.
+\]
+This is (twice) the ``boundary contribution'' in \cite{HZ}, Section~1.4, see also Section~\ref{special-lift-section}.
+\end{example}
+
+

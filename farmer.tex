@@ -1,0 +1,61 @@
+\section{The Hilbert modular surface and  its Borel-Serre compactification}
+
+
+\subsection{The symmetric space and its arithmetic quotient}
+
+\subsubsection{The orthogonal group and its symmetric space}
+
+
+Let $V$ be a rational vector space of dimension $4$ with a
+non-degenerate symmetric bilinear form  $(\,,\,)$ of signature
+$(2,2)$.
+We let $\underline{G} = \SO(V)$, viewed as an algebraic group over $\Q$.
+We let $G=\underline{G}_0(\R) \simeq \SO_0(2,2)$ be the connected component of the identity of the real points of $\underline{G}$.
+It is most convenient to identify the associated symmetric space $D= D_V$ with the
+space of negative $2$-planes in $V(\R)$ on which the bilinear form $(\,,\,)$ is
+negative definite:
+\[
+D = \{z \subset V_{\R} ; \;\text{$dim z =2$ and $(\,,\,)|_z < 0$}
+\}.
+\]
+We pick an orthogonal basis $\{e_1,e_2,e_3,e_4\}$ of $V_{\R}$ with $(e_1,e_1)=(e_2,e_2)=1$ and $(e_3,e_3)=(e_4,e_4)=-1$. We denote the coordinates of a vector $x$ with respect to this basis by $x_i$. We pick as base point of $D$ the plane $z_0=[e_3,e_4]$ spanned by $e_3$ and $e_4$, and we let $K \simeq \SO(2)\times \SO(2)$ be the maximal compact subgroup of $G$ stabilizing $z_0$. Thus $D \simeq G/K$. Of course, $D \simeq \H \times \h$, the product of two upper half planes. 
+
+
+We let  $\underline{P}$ be a rational parabolic subgroup stabilizing a rational isotropic line $\ell$ and define $P= \underline{P}_0(\R)$ as before. We let $\underline{N}$ be its unipotent subgroup and $N = \underline{N}(\R)$. 
+We let $u =(e_1+e_4)/\sqrt{2}$ and $u' =(e_1-e_4)/\sqrt{2}$ be two isotropic vectors so that $(u,u')=1$. We assume that $u,u'$ are defined over $\Q$ and obtain a rational Witt decomposition 
+\[
+V = \ell \oplus W \oplus \ell'
+\]
+with $\ell = \Q u$, $\ell'=\Q u'$, and a subspace $W = \ell^{\perp} \cap {\ell'}^{\perp}$ such that $W_{\R} = \Span_{\R}(e_2,e_3)$. The choice of $u'$ gives a Levi splitting of $\underline{P}$, and we write
+\[
+P =NAM
+\]
+for the Langlands decomposition. Here, with respect to the basis $u,e_2,e_3,u'$, we have  
+\begin{align*}
+{N} &=
+ \{ n(w)   = ( 
+\begin{smallmatrix}
+1&(\cdot,w)& -(w,w)/2 \\
+ &   1_W   & -w  \\
+ &         & 1  \\
+\end{smallmatrix} )
+; \; w \in W_{\R} \}, \\ 
+{A} &= \{ a(t) = 
+( \begin{smallmatrix}
+t& &  \\
+ &   1_W   &  \\
+ &         & t^{-1}\\
+\end{smallmatrix} ); \, t \in \R_+
+ \}, \\ 
+{M} & =
+\{ m(s)  =
+( \begin{smallmatrix}
+1& & \\
+ &    \begin{smallmatrix} cosh(s) & sinh(s) \\ sinh(s) & cosh(s)
+ \end{smallmatrix}    & \\\
+ &         & 1  \\
+\end{smallmatrix} )
+; \; s \in \R \}.
+\end{align*}
+Note $N \simeq W_{\R}$. We obtain coordinates for $D$ by $z=z(t,s,w)$ where $z$ is the negative two-plane in $V_{\R}$ with $z=[n(w)a(t)m(s)e_3,n(w)a(t)m(s)e_4]$. 
+

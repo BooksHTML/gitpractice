@@ -1,0 +1,110 @@
+
+
+
+\subsubsection{The form $\phi_{0,1}$ on $W$}
+
+
+
+
+We now combine $\tilde{\psi}_{0,1}$ and $\tilde{\psi}_{0,1}'$ to obtain an integrable and also square-integrable $W$-valued function 
+\[
+\phi_{0,1}  \in [L^2(W_{\R}) \otimes \wwedge{0} \mathfrak{m}^{\ast} \otimes W_{\C}]
+\]
+by
+\begin{equation*}
+\phi_{0,1}(x) = \tilde{\psi}_{0,1}(x) + \tilde{\psi}_{0,1}'(x)
+\end{equation*}
+and then also $\phi_{0,1}(x,s)$. Combining Lemmas \ref{singularitiesofAandB}, \ref{singularitiesofA'andB'} and \eqref{AB-eq}, \eqref{AB'-eq} we obtain
+
+\begin{proposition}\label{phi-prop}
+\begin{itemize}
+\item[(i)] $B(x) + B'(x)$ is $C^2$ on the complement of the light-cone in $W$ and  $C^2$ on nonzero $M$-orbits.
+\item[(ii)] $A(x) + A'(x)$ is $C^1$ on the complement of the light-cone in $W$ and  $C^1$ on nonzero $M$ orbits.
+\item[(iii)] $X_{23}(B + B') = -(A + A')$ on all of $W$.
+\end{itemize}
+So for given $x$, the function $\phi_{0,1}(x,s)$ is a $C^1$-function on $D_W$ with values in $W_{\C}$.
+\end{proposition}
+
+
+The following theorem is fundamental for us. It is an immediate consequence of the Lemmas~\ref{schluessel} and \ref{xi'closed}. 
+
+\begin{theorem}\label{local-phi}
+The form $\varphi_{1,1}$ on $D_W$ is exact. Namely,
+\[
+d \phi_{0,1} = \varphi_{1,1}.
+\]
+Furthermore,
+\[
+L \phi_{0,1} = d \psi_{0,1}.
+\]
+\end{theorem}
+
+\begin{proposition}
+The function $\phi_{0,1}$ is an eigenfunction of $K'=\SO(2)$ of weight $2$ under the Weil representation. More precisely,
+\[
+\omega(k') \phi_{0,1} =  \chi^2(k')\phi_{0,1},
+\]
+where $\chi$ is the standard character of $\SO(2) \simeq U(1)$.
+\end{proposition}
+
+\begin{proof}
+It suffices to show this for one component of $\phi_{0,1}$, that is, the function $B(x)+B'(x)$. Then the assertion has been already proved in \S 2.3 by showing that $B(x)+B'(x)$ is an eigenfunction under the Fourier transform. We give here an infinitesimal proof. Since $\omega(k')$ acts essentially as Fourier transform and $B+B'$ is $L^1$, we see that $\omega(k')(B+B')$ is continuous. Hence it suffices to establish the corresponding current equality $[\omega(k')(B+B')] = \chi^2(k')[B+B']$, since continuous functions coincide when they induce the same current. The infinitesimal generator of $K'$ acts by $
+H:=\frac{-i}{4\pi} \left(\tfrac{\partial^2}{\partial{x_2^2}} - \tfrac{\partial^2}{\partial{x_3^2}}\right) + \pi i (x_2^2-x_3^2)$,
+and a straightforward calculation immediately shows
+\[
+H B' = 2i B' \qquad \text{and} \qquad  H {B} = 2i {B},
+\]
+outside the singularity $x_2^2-x_3^2=0$. 
+\begin{comment}
+For $B$, we have
+\[
+B(x) =- \frac{1}{2 \sqrt{2} \pi} e^{-\pi(x_2^2+ x_3^2)} + \frac{1}{2  \sqrt{\pi}}|x_3| \Gamma(\tfrac12,2 \pi x_3^2) e^{ -\pi(x_2^2- x_3^2)},
+\]
+and we denote the second summand by $\tilde{B}(x)$. One easily sees that the first summand is annihilated by 
+$\frac{-i}{4\pi} \square + \pi i r^2$. For $\tilde{B}(x)$, we first see 
+\[
+\frac{\partial}{\partial x_3} \tilde{B}(x) = \frac{1}{x_3} \tilde{B}(x) -\sqrt{2}x_3  e^{-\pi(x_2^2+ x_3^2)}.
++ 2\pi x_3 \tilde{B}(x),
+\]
+again away from the singularity $x_3=0$. Indeed, this follows easily from $\frac{\partial}{\partial x_3}  \Gamma(\tfrac12,2 \pi x_3^2) = - 2 \sqrt{2\pi} \sgn(x_3) e^{-2 \pi x_3^2}$. A little calculation then gives
+\begin{align*}
+\frac{\partial^2}{\partial x_3^2} \tilde{B}(x) = 6 \pi \tilde{B}(x) - 2\sqrt{2} e^{ -\pi(x_2^2+x_3^2)} +(2\pi)^2 x_3^2 \tilde{B}(x).
+\end{align*}
+Then 
+\[
+\frac{-i}{4\pi} \square \tilde{B}(x) = -\pi i r^2 \tilde{B}(x) + 2i \tilde{B}(x) - 2i \frac{1}{2\sqrt{2}\pi} e^{ -\pi(x_2^2+x_3^2)}.
+\]
+In conclusion, 
+\[
+H {B}(x) = 2i {B}(x),
+\]
+again, outside the singularity. 
+\end{comment}
+Now we consider the currents $H[B]$ and $H[B']$. An easy calculation using that $B$ and $B'$ are $C^2$ up to $|x_3|e^{-\pi(x_2^2-x_3^2)}$  shows that for a test function $f$ on $W$ we have
+\begin{align*}
+H[B](f) &= [HB](f) + \int_{0}^{\infty} e^{-\pi x_2^2} f(x_2,0)dx_2, \\
+H[B'](f) &= [HB'](f) - \int_{0}^{\infty} e^{-\pi x_2^2} f(x_2,0) dx_2.
+\end{align*}
+Thus $H[B+B'] = [H(B+B')]= 2i[B+B']$ as claimed.
+\end{proof}
+\ \\[12pt] 
+\textbf{5.2.3 The map $\iota_P$}\label{iotaP}
+\\[10pt]
+We define a map 
+\[
+\iota_P: \calS(W_{\R}) \otimes \wwedge{i} \mathfrak{m}^{\ast} \otimes W_{\C} \to \calS(W_{\R}) \otimes \wwedge{i+1} \left( \mathfrak{m}^{\ast} \oplus  \mathfrak{n}^{\ast} \right) 
+\]
+by 
+\[
+\iota_P(\varphi \otimes \omega \otimes w) = \varphi \otimes \left((\omega \wedge (w \wedge u')\right).
+\]
+Here we used the isomorphism $\mathfrak{n} \simeq W \wedge \R u \in \bigwedge^{2} V_\R \simeq \mathfrak{g}$ and identify $W$ with its dual via the bilinear form $(\,,\,)$ so that $\mathfrak{n}^{\ast} \simeq W \wedge \R u'$. In \cite{FMres}, Section ~6.2 we explain that $\iota_P$ is a map of Lie algebra complexes. Hence we obtain a map of complexes
+\[
+[\calS(W_{\R}) \otimes \calA^i(D_W) \otimes W_{\C}]^M \to [\calS(W_{\R}) \otimes \calA^{i+1}(e(P))]^{NM}, 
+\]
+which we also denote by $\iota_P$. Here $N$ acts trivially on $\calS(W_{\R})$. Explicitly, the vectors $e_2$ and $e_3$ in $W$ map under $\iota_P$ to the left-invariant $1$-forms
+\[
+e_2 \mapsto \cosh(s)dw_2 - \sinh(s)dw_3 \qquad e_3 \mapsto \sinh(s)dw_2 - \cosh(s)dw_3
+\]
+with the coordinate functions $w_2,w_3$ on $W$ defined by $w=w_2e_2+w_3e_3$. We apply $\iota_P$ to the forms on $W$ of this section, and we obtain $\varphi_{1,1}^P$, $\phi_{0,1}^P$, $\psi_{0,1}^P$, and ${\psi'}_{0,1}^P$.
+

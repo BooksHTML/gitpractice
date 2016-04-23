@@ -1,0 +1,72 @@
+\subsection{The closure of special cycles in the Borel-Serre boundary and the capped cycle $C_x^c$}
+
+We now study the closure of $C_x$ in $\partial \overline{X}$, which is the same as the intersection of $\overline{C}_x$ or $\partial C_x$ with the union of the hypersurfaces $e'(P)$. A straightforward calculation gives 
+
+\begin{proposition}\label{boundaryofC}
+If $(x,u) \neq 0$ then there exists a neighborhood $U_{\infty}$ of $e(P)$ such that
+$$
+D_x \cap U_{\infty} = \emptyset.
+$$
+If $(x,u) = 0$, then $\overline{D}_x \cap e(P)$ is contained in the fiber of $p$ over $s(x)$, where $s(x)$ is the unique element of $\R$ satifying
+\[
+(x, m(s(x)) e_3) = 0.
+\]
+At $s(x)$ the intersection $\overline{D}_x \cap e(P)$ is the affine line in $W$ given by 
+\[
+\{ w \in W: (x,w) = (u',x)\}.
+\]
+\end{proposition}
+
+We define $c_x \subset \partial C_x$ to be the closed geodesic in the fiber over $s(x)$ which is the image of $\overline{D}_x \cap e(P)$ under the covering $e(P) \to e'(P)$. We have
+
+\begin{proposition}\label{TnBS}
+\begin{enumerate}
+\item[(i)] The $1$-cycle $\partial C_x$ is a finite union of circles. 
+\item[(ii)] At a cusp associated to $P$, each circle is contained in a fiber of the map $\kappa: e'(P) \to X_W$ and hence is a rational boundary (by Lemma~\ref{ePhomology}). 
+\item[(iii)] Two boundary circles $c_x$ and $c_y$ are parallel if they are contained in the same fiber. In particular, 
+$
+c_x \cap c_y \neq \emptyset \iff c_x= c_y.
+$
+\end{enumerate}
+\end{proposition}
+
+We now describe the intersection of $\overline{C}_n$ or $\partial C_n$ with $e'(P)$. For $\calL_V=\calL = L +h$ we can write
+\begin{equation*}
+{\calL}_W= {\calL}_{W_P}= (\calL \cap u^{\perp}) / (\calL \cap u) \simeq \coprod_k \left(L_{W,k} +
+h_{W,k}\right)
+\end{equation*}
+for some lattices $L_{W,k} \subset W$ and vectors $h_{W,k} \in L^{\#}_{W,k}$.
+
+Via the isomorphism $W \simeq N$, we can identify $\G_N = N \cap \G$ with a lattice $\Lambda_W$ in $W$. Since  $u$ is primitive in $L $ and $n(w) x= x + (w,x)u$ for a vector $x \in u^{\perp}$ we see that ${\calL}_W$ is contained in the dual lattice of $\Lambda_W$. 
+
+\begin{lemma}\label{LemmaB}
+The intersection $\partial C_n \cap e'(P)$ is given by 
+\[
+ \coprod_{ \substack{x\in \G_M \back \mathcal{L}_W \\ (x,x)=2n}} \coprod_{0 \leq k < \min'_{\la \in \Lambda_W}   |(\la,x)|} c_{x+ku}.
+ \] 
+Here $\min'$ denotes that we take the minimum over all nonzero values of $ |(\la,x)|$.
+\end{lemma}
+
+\begin{proof}
+
+We will first prove $\partial C_{n,P} := \partial C_n \cap e'(P)$ is a disjoint union
+\begin{equation} \label{union}
+\partial C_{n,P} = \coprod_{y \in \G_P \back \calL_{n,u}} c_y,
+\end{equation}
+where $\calL_{n,u} = \{ x \in \calL \cap u^{\perp};\, (x,x)=2n\}$. Indeed, first note that by Proposition~\ref{boundaryofC} only vectors in $\calL_{n,u}$ can contribute to $\partial C_{n,P}$. 
+The action of $\Gamma$ on $V$ induces an equivalence relation $\sim_{\Gamma}$ on the set $\G_p \back \calL_{n,u} \subset V$ which is consequently a
+union of equivalence classes $[x_i]= [x_i]_P, 1 \leq i \leq k$.  We may accordingly organize the union $R$ on the right-hand side of \eqref{union} as $R =  \coprod _{i=1}^k  \coprod_{ y \in [x_i]} c_y.$\\
+$\text{But it is clear that $(\partial C_{x_i})_P = \coprod_{ y \in [x_i]} c_y$ and hence we have the equality of $1$-cycles in $e'(P)$
+and $\partial X$}$
+\begin{equation}\label{boundaryofspecialcycle}
+(\partial C_{x_i})_P = \sum_{ y \in [x_i]_P} c_y \qquad  \text{and} \qquad  \partial C_{x_i}= \sum_{[P]} \sum_{ y \in [x_i]_P} c_y,
+\end{equation}
+since an element $y  \in [x_i]$ gives rise to the lift $D_y$ of $C_{x_i}$ to $D$ that intersects
+$e(P)$ and this intersection projects to $c_y$.  Thus we may rewrite the right-hand side of\eqref{union} as
+$R= \coprod_{  \sim_{\Gamma} \back \calL_{n,u}} \partial C_{x_i}.$
+But it is clear that this latter union is $\partial C_{n,P}$ and \eqref{union} follows. Finally, we easily see that $\coprod_{ \substack{x\in \G_M \back \mathcal{L}_W \\ (x,x)=2n}} \coprod_{0 \leq k < \min'_{\la \in \Lambda_W}   |(\la,x)|} x+ku$ is a complete set of representatives of $\G_P$-equivalence classes in $\calL_{n,u}$. These give the circles $c_{x+ku}$ above. 
+
+\end{proof}
+
+
+

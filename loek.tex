@@ -1,0 +1,53 @@
+\subsection{Compactly supported cohomology and the cohomology of the mapping cone}\label{mappingconesection}
+
+\vskip 0.5in
+
+We briefly review the mapping-cone-complex realization of the cohomology of compact supports of $X$. For a more detailed discussion, see \cite{FMspec}, section~5. 
+
+\vskip 0.5in
+
+We let $A_c^{\bullet}(X)$ be the complex of compactly supported differential forms on $X$ which gives rise to $H_c^{\bullet}(X)$, the cohomology of compact supports. We now represent the compactly-supported cohomology of $X$ by the cohomology of the mapping cone $C^{\bullet}$ of $i^*$, see \cite{Weibel}, p.19, where as before $i: X \hookrightarrow \overline{X}$. However, we will change the sign of the differential on $C^{\bullet}$ and shift the grading down by one. Thus we have
+$$C^i =\{ (a,b), a \in A^i (\overline{X}), b \in A^{i-1}(\partial \overline{X})\}$$
+with $d(a,b) = (da, i^*a - db)$.
+If $(a,b)$ is a cocycle in $C^{\bullet}$ we will use $[[a,b]]$ to denote its cohomology class. We have
+\begin{proposition} \label{quasiiso}
+The cochain map $A_c^{\bullet}(X) \to C^{\bullet}$ given by $c \mapsto (c,0)$ is a quasi-isomorphism.
+\end{proposition}
+
+\vskip 0.5in
+
+We now give a cochain map from $C^{\bullet}$ to $ A_c^{\bullet}(X)$ which induces the inverse to the above isomorphism. We let $V$ be a product neighborhood of $\partial \overline{X}$ as in Section~\ref{BScomp}, and we let $\pi:V \to \partial \overline{X}$ be the projection. If $b$ is a form on $\partial \overline{X}$ we obtain a form $\pi^{\ast} b$ on V. Let $f$ be a smooth function of the geodesic flow coordinate $t$ which is $1$ near $t=\infty$ and zero for $t \leq T$
+for some sufficiently large $T$. We may regard $f$ as a function on $V$ by making it constant on the $\partial \overline{X}$ factor. We extend $f$ to all of $ \overline{X}$ by making it zero off of $V$. Let $(a,b)$ be a cocycle in $C^i$. Then there exist a compactly supported closed form $\alpha $ and a form $\mu$ which vanishes on $\partial \overline{X}$ such that
+\[
+a - d(f \pi^{\ast}b ) = \alpha + d\mu.
+\]
+We define the cohomology class $[a,b]$ in the compactly supported  cohomology $H^i_c(X)$ to be the class of $\alpha$, and the assignment $[[a,b]] \mapsto [a,b]$ gives the desired inverse. From this we obtain the  following integral formulas for the Kronecker pairings with $[a,b]$. 
+\vskip 0.5in
+\begin{lemma}\label{integralformula}
+Let $\eta$ be a closed form on $\overline{X}$ and $C$ a relative cycle in $\overline{X}$ of appropriate degree. Then 
+$$
+\langle[a, b], [\eta]]\rangle 
+= \int_{\overline{X}}a\wedge \eta - \int_{\partial \overline{X}} b \wedge i^*\eta, \ \text{and} \ \  
+\langle [a,b],C \rangle =  \int_{C}a - \int_{\partial C} b.$$
+\end{lemma}
+\vskip 0.5in
+\section{Capped special cycles and linking numbers in Sol}\label{capped-cycles}
+
+For $x \in V$ such that $(x,x)>0$, we define 
+\[
+D_x =\{ z \in D; \, z \perp x \}.
+\]
+Then $D_x$ is an embedded upper half plane in $D$. We let $\G_x \subset \G$ be the stabilizer of $x$ and define the special or Hirzebruch-Zagier cycle by 
+\[
+C_x = \G_x \back D_x, 
+\]
+and by slight abuse identify $C_x$ with its image in $X$. These are modular or Shimura curves. For positive $n \in \Q$, we write $\calL_n = \{ x \in \mathcal{L}; \, \tfrac12(x,x)= n\}$. Then the composite cycles $C_n$ are given by
+\[
+C_n= \sum_{x \in \G \back \calL_n} C_x.
+\]
+Since the divisors define in general relative cycles, we take the sum in $H_2(X,\partial X,\Z)$. 
+
+
+\vskip 0.5in
+
+

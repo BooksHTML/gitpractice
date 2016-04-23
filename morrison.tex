@@ -1,0 +1,122 @@
+\subsubsection{The singular Schwartz function $\tilde{\psi}_{0,1}$}
+
+
+
+
+In the same way as for $V$ we define
+\begin{align}\label{Greeneq}
+\tilde{\psi}_{0,1}(x)  &= - \left(\int_1^{\infty} \psi_{0,1}^0(\sqrt{r}x) r^{-3/2} dr\right)e^{-\pi(x,x)}
+\end{align}
+for {\it all} $x \in W$, including $x=0$. Define $\tilde{\psi}_{0,1}^0(x)$, $\tilde{\psi}_{0,1}^0(x,s)$ as before and also
+\begin{align}\label{xiZ}
+\tilde{\psi}_{0,1}(x,\tau,s) &= v^{-1/2} \tilde{\psi}_{0,1}^0(\sqrt{v}x,s) e^{\pi i (x,x)\tau}  = - \left( \int_v^{\infty} \psi_{0,1}^0(\sqrt{r}x,s) r^{-3/2} dr \right) e^{\pi i (x,x)\tau} \notag.
+\end{align}
+Note that $\tilde{\psi}_{0,1}(x,s)$ has a singularity at $D_{w,x}$. Define functions $A$ and $B$ by
+\[
+\tilde{\psi}_{0,1}(x)  = A(x)  \otimes 1 \otimes e_2  + B(x) \otimes 1 \otimes e_3
+\]
+and note 
+\begin{equation}\label{AB-eq}
+-X_{23} B(x) = A(x).
+\end{equation}
+We extend these functions to $D_W$ as before. We see by integrating by parts
+
+
+
+\begin{lemma}\label{firstformulaforAandB}
+\begin{align*}
+A(x) &= 
+\frac{1}{2\sqrt{\pi}}  x_2 \frac{x_3}{|x_3|}  \Gamma(\tfrac12,2 \pi x_3^2)  e^{-\pi (x,x)}    \label{AA}\\
+B(x)& =
+ - \frac{1}{2 \sqrt{2} \pi} e^{- \pi(x_2^2+ x_3^2)} + \frac{1}{2  \sqrt{\pi}}|x_3|    \Gamma(\tfrac12,2 \pi x_3^2)  e^{-\pi (x,x)}.
+\end{align*}
+Here $\G(\tfrac12,a) = \int_a^{\infty} e^{-u} u^{-1/2} du$ is the incomplete $\G$-funtion at $s=1/2$. 
+\end{lemma}
+
+ 
+$\text{It is now immediate that $B$ is continuous and bounded on $D_W$.}$ Since $A$ is clearly bounded
+we find that $A$ and $B$ are locally integrable on $D_W$ and integrable and square-integrable on $W$. The singularities of $A$ and $B$ are given as follows.
+
+\begin{lemma}\label{singularitiesofAandB}
+\begin{enumerate}
+\item[(i)] $B(x) - (1/2)|x_3| e^{-\pi (x,x)} $ is $C^2$ on the Minkowski plane $W$.
+\item[(ii)] $A(x)- (1/2) x_2 \frac{x_3}{|x_3|} e^{-\pi (x,x)}$ is $C^1$ on the Minkowski plane $W$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof} 
+Use Lemma \ref{firstformulaforAandB},
+expand the incomplete gamma function around $x_3=0$,
+and observe that $|x|x^n$ is $C^n$ for $n>0$. 
+\end{proof}
+
+
+
+
+
+The key properties of $\tilde{\psi}_{0,1}$ analogous to Lemma~\ref{schluesselV} are given by 
+
+\begin{lemma}\label{schluessel}
+Outside $D_{W,x}$,
+\[
+d\tilde{\psi}_{0,1}(x,s) = \varphi_{1,1}(x,s) \qquad \text{and} \qquad 
+L\tilde{\psi}_{0,1}(x,\tau) = \psi_{0,1}(x,\tau).
+\]
+\end{lemma}
+
+
+
+\subsubsection{The singular function $\tilde{\psi}_{0,1}'$}
+
+
+
+Inspired by \cite{HZ}, section~2.3, we define a functions $A'(x)$ and $B'(x)$ on $W$ by
+\begin{align}\label{AB'-eq}
+B'(x) &= \begin{cases} \frac12\min(|x_2-x_3|,|x_2+ x_3|)e^{- \pi (x,x)}  & \text{if}  \, x_2^2-x_3^2 >0,\\ 0 \  & \text{otherwise},
+\end{cases} \\
+A'(x) &= -X_{23}B'(x)=   -\sgn(x_2x_3)B'(x). \notag
+\end{align}
+ 
+ \begin{lemma}\label{singularitiesofA'andB'} 
+\begin{enumerate}
+\item[(i)] 
+$B'(x) + \tfrac12|x_3|e^{- \pi (x,x)}$ is $C^2$ on the complement of the light-cone in $W$ and  $C^2$ on nonzero $M$-orbits.
+ \item[(ii)] 
+ $A'(x) + \tfrac12 x_2 \frac{x_3}{|x_3|}e^{- \pi (x,x)}$ is $C^1$ on the complement of the light-cone in $W$ and  $C^1$  on nonzero $M$-orbits.
+ \end{enumerate}
+\end{lemma}
+
+
+
+
+
+We define $\tilde{\psi}'_{0,1}$ by
+\[
+\tilde{\psi}_{0,1}'(x) = A'(x) \otimes 1 \otimes e_2 +  B'(x) \otimes 1 \otimes e_3
+\]
+and $\tilde{\psi}_{0,1}'(x,\tau,s) = v^{-1/2} m(s) \tilde{\psi}_{0,1}'(m^{-1}(s)\sqrt{v}x)) e^{\pi i (x,x)\tau}$. A little calculation shows that $\tilde{\psi}_{0,1}'(x)$ is locally constant on $D_W$ with a singularity at $D_{W,x}$ and holomorphic in $\tau$:
+
+
+
+\begin{lemma}\label{xi'closed}
+Outside $D_{W,x}$ we have
+ \[
+d \tilde{\psi}_{0,1}'(x) = 0 \qquad \qquad \text{and} \qquad \qquad 
+L \tilde{\psi}_{0,1}'(x,\tau) = 0.
+\]
+\end{lemma}
+
+
+
+
+
+
+\begin{remark}
+The functions $\tilde{\psi}_{0,1}(x)$ and $\tilde{\psi}_{0,1}'(x)$ define currents on $D_W$. One can show, similarly to Section~\ref{W-currents}, that for $(x,x)>0$ we have
+\begin{align*}
+d[\tilde{\psi}_{0,1}(x)] = \delta_{D_{W,x} \otimes x} + [\varphi_{1,1}(x)], \qquad \qquad 
+d[\tilde{\psi}'_{0,1}(x)] = -\delta_{D_{W,x} \otimes x},
+\end{align*}
+where $D_{W,x} \otimes x$ is the $0$-cycle $D_{W,x}$ `with coefficient $x \in W$' defined in \cite{FMcoeff}. 
+\end{remark}
+

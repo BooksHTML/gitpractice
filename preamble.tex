@@ -1,0 +1,178 @@
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage[mathscr]{eucal}
+\usepackage{verbatim}
+
+\textheight8.75in \topmargin+0.5in \textwidth6in
+\oddsidemargin.125in \evensidemargin.125in
+
+\numberwithin{equation}{section}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section] 
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem*{notation}{Notation}
+\newtheorem{problem}[theorem]{Problem}
+
+
+
+
+
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\h}{\mathbb{H}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\A}{\mathbb{A}}
+
+\newcommand{\G}{\Gamma}
+\newcommand{\g}{\gamma}
+\newcommand{\s}{\sigma}
+\newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\y}{\mathbf{y}}
+\newcommand{\tb}{\mathbf{t}}
+
+\newcommand{\back}{\backslash}
+
+\newcommand{\V}{V(\Q)}
+
+\newcommand{\wwedge}[1]{\sideset{}{^{#1}}\bigwedge}
+
+
+
+
+% Jan's Macros
+
+\newcommand{\zxz}[4]{\begin{pmatrix} #1 & #2 \\ #3 & #4 \end{pmatrix}}
+\newcommand{\abcd}{\zxz{a}{b}{c}{d}}
+
+\newcommand{\kzxz}[4]{\left(\begin{smallmatrix} #1 & #2 \\ #3 & #4\end{smallmatrix}\right) }
+\newcommand{\kabcd}{\kzxz{a}{b}{c}{d}}
+\newcommand{\veps}{\varepsilon}
+\newcommand{\lo}{\longrightarrow}
+\newcommand{\imag}{{\rm i}}
+\newcommand{\set}[1]{\left\{ #1 \right\} }
+\newcommand{\im}{\operatorname{Im}}
+\newcommand{\re}{\operatorname{Re}}
+\newcommand{\Res}{\operatorname{Res}}
+
+\newcommand{\vl}{v_{\ell}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calJ}{\mathcal{J}}
+\newcommand{\calK}{\mathcal{K}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calQ}{\mathcal{Q}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calZ}{\mathcal{Z}}
+
+\newcommand{\fraka}{\mathfrak a}
+\newcommand{\frakc}{\mathfrak c}
+\newcommand{\frakd}{\mathfrak d}
+\newcommand{\frake}{\mathfrak e}
+\newcommand{\frakS}{\mathfrak S}
+\newcommand{\frakt}{\mathfrak t}
+\newcommand{\frakx}{\mathfrak x}
+\newcommand{\fraky}{\mathfrak y}
+\newcommand{\frakE}{\mathfrak E}
+\newcommand{\fraknull}{\mathfrak 0}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\bs}{\backslash}
+\newcommand{\norm}{\operatorname{N}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Log}{\operatorname{Log}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\erf}{\operatorname{erf}}
+\newcommand{\Kern}{\operatorname{Kern}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\Sl}{\operatorname{SL}}
+\newcommand{\Gl}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\Spin}{\operatorname{Spin}}
+\newcommand{\PSL}{\operatorname{PSL}}
+\newcommand{\Sp}{\operatorname{Sp}}
+\newcommand{\Symp}{\operatorname{Sp}}
+\newcommand{\Mp}{\operatorname{Mp}}
+\newcommand{\Orth}{\operatorname{O}}
+\newcommand{\Uni}{\operatorname{U}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Clh}{\Cl_{\text{\rm \scriptsize H}}}
+\newcommand{\CL}{\operatorname{\tilde{Cl}}}
+\newcommand{\Ureg}{U_{\text{\rm \scriptsize reg}}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\J}{\calJ^{\text{\rm \scriptsize cusp}}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\Div}{\operatorname{Div}}
+\newcommand{\Bil}{\operatorname{Bil}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\tg}{\operatorname{tg}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\TF}{\tilde{F}}
+\newcommand{\dv}{\operatorname{div}}
+\newcommand{\Ei}{\operatorname{Ei}}
+\newcommand{\erfc}{\operatorname{erfc}}
+\newcommand{\Iso}{\operatorname{Iso}}
+\newcommand{\ch}{\operatorname{CH}}
+\newcommand{\z}{\operatorname{Z}}
+\newcommand{\za}{\operatorname{\widehat{Z}}}
+\newcommand{\rata}{\operatorname{\widehat{Rat}}}
+\newcommand{\dega}{\operatorname{\widehat{deg}}}
+\newcommand{\pica}{\operatorname{\widehat{Pic}}}
+\newcommand{\diva}{\operatorname{\widehat{div}}}
+\newcommand{\cha}{\operatorname{\widehat{CH}}}
+\newcommand{\cc}{\operatorname{c}}
+\newcommand{\cca}{\widehat{\operatorname{c}}}
+\newcommand{\fh}{\operatorname{ht}}
+\newcommand{\curv}{\operatorname{curv}}
+\newcommand{\Lk}{\operatorname{Lk}}
+\newcommand{\PD}{\operatorname{PD}}
+
+%
+%
+
+
+
+
+
+

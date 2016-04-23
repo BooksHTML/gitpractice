@@ -1,0 +1,376 @@
+\subsection{The Hirzebruch-Zagier Theorem} 
+
+We now view $[\theta_{\varphi}, \theta_{\phi}]$ as a class in $H^2(\tilde{X})$ via the map $j_{\#}: H_c^2(X) \to H^2(\tilde{X})$. We recover the Hirzebruch-Zagier-Theorem. 
+
+\begin{theorem}\label{HZTheorem}
+We have 
+\[
+j_{\#}[\theta_{\varphi}, \theta_{\phi}](\tau) =  -\frac{1}{2\pi}\delta_{h0} [\omega] + \sum_{n>0} [T^c_n] q^n \in H^2(\tilde{X},\Q) \otimes M_2(\G(N)).
+\]
+In particular,
+\[
+ -\frac{1}{2\pi}\delta_{h0} \vol(T_m) + \sum_{n>0} (T_n^c \cdot T_m)_{\tilde{X}} q^n \in M_2(\G(N)).
+\]
+This is the result Hirzebruch-Zagier proved for certain Hilbert modular surfaces (Example~\ref{HZex}) by explicitly computing the intersection numbers $T_m \cdot T^c_n $.
+\end{theorem}
+
+\begin{proof}
+
+This follows from Theorem~\ref{FM-main-th} since $j_{\ast} C_n^c = T_n^c$ (Proposition~\ref{CnTn}), combined with the following general principle.
+Suppose $\omega$ is a compactly supported form on $X$ such that the cohomology class of $\omega$ is the Poincar\'e dual of the homology class of a cycle $C$: $[\omega] = \PD(C)$. Then we have $ j_{\#}[\omega] = \PD( j_* C)$.
+To see this we have only to replace $\omega$ by a cohomologous  `Thom representative' of $\PD(C)$, namely a closed form $\tilde{\omega}$ supported in a tubular neighborhood $N(C)$ of $C$ in $X$ such that the integral of $\tilde{\omega}$ over any disk of $N(C)$ is one. Then it is a general fact from algebraic topology (extension by zero of a Thom class)  that $\tilde{\omega}$ represents the Poincar\'e dual of $C$ in any manifold $M$ containing $N(C)$, in particular for $M = \tilde{X}$.
+\end{proof}
+
+
+\begin{remark}
+If one is only interested in recovering the statement of this theorem, then there is also a different way of deriving this from the Kudla-Millson theory. Namely, the lift $\Lambda$ on $H_2(X)$ (Theorem~\ref{KM90}) factors through the quotient of $H_2(X)$ by $H_2(\partial X)$ since the restriction of $\theta_{\varphi_2}$ is exact (Theorem~\ref{globalexact}). But by Proposition~\ref{intersectionhom} we have $j_{\ast} H_2(X) \simeq H_2(X)/  H_2(\partial X)$, and the Hirzebruch-Zagier result exactly stipulates the modularity of the lift of classes in $j_{\ast} H_2(X)$. However, in that way one misses the  remarkable  extra structure coming from $\partial X$ as we will explain in the next subsection.
+\end{remark}
+
+
+\subsection{The lift of special cycles}\label{special-lift-section}
+
+We now consider the lift of a special cycle $C_y$. By Theorem~\ref{FM-main-th} and Lemma~\ref{integralformula} we see
+\begin{align}\label{special-lift}
+\La^c(C_y,\tau,\calL_V) &= -\frac{1}{2\pi}\delta_{h0} \vol(C_y) + \sum_{n>0} ( C^c_n \cdot C_y) q^n \\
+&= \int_{C_y} \theta_{\varphi_2}(\tau,\calL_V) - \sum_{[P]}\int_{(\partial C_y)_P} \theta^P_{\phi_{0,1}}(\tau,\calL_{W_P}). \notag
+\end{align}
+
+The two terms on the right, the integrals over $C_y$ and ${\partial C_y}$, are both non-holomorphic modular forms (see below) whose difference is holomorphic (by Theorem~\ref{La^c-hol}). So the generating series series of $(C^c_n \cdot C_y)$ is the sum of two non-holomorphic modular forms. We now give geometric interpretations for the two individual non-holomorphic forms. 
+
+Following \cite{HZ} we define the {\it interior} intersection number of two special cycles by
+\[
+( C_n \cdot C_y )_X =  (C_n \cdot C_y )^{tr} + \vol(C_n \cap C_y),
+\]
+the sum of the transversal intersections and the volume of the $1$-dimensional (complex) intersection of  $C_n$ and $C_y$ which occur if one of the components of $C_n$ is equal to $C_y$. 
+
+\begin{theorem}\label{interior-lift}
+We have
+\[
+ \int_{C_y} \theta_{\varphi_2}(\tau,\calL_V) = -\frac{1}{2\pi}\delta_{h0} \vol(C_y) \:+\; 
+ \sum_{n=1}^{\infty} ( C_n \cdot C_y )_X q^n \; + \; \sum_{n \in \Q} \sum_{[P]} \int_{(\partial C_y)_{P}}  {\tilde{\psi}_{0,1}^P}(n)(\tau).
+ \]
+ So the Fourier coefficients of the holomorphic part of the non-holomorphic modular form $\int_{C_y} \theta_{\varphi_2}$ are the interior intersection numbers of the cycles $C_y$ and $C_n$. 
+\end{theorem}
+
+\begin{proof}
+This is essentially \cite{FCompo}, section~5, where more generally $\Orth(p,2)$ is considered. 
+There the interpretation of the holomorphic Fourier coefficients as interior intersection number is given. (For more details of an analogous calculation see \cite{FMspec}, section~8). A little calculation using the formulas in \cite{FCompo} gives the non-holomorphic contribution. A more conceptual proof would use the relationship between $\varphi_2$ and $\tilde{\psi}_1$ (see Proposition~\ref{schluesselV} and Section~\ref{currents}) and the restriction formula for $\tilde{\psi}_1(n)$ (Theorem~\ref{psitilderes}). 
+\end{proof}
+
+
+
+
+By slight abuse of notation we write $\Lk(C_n,C_y) = \sum_{[P]} \Lk((\partial C_n)_P, (\partial C_y)_P)$ for the total linking number of $\partial C_n$ and $\partial C_y$. Then by Theorem~\ref{xi'-integralP} we obtain
+
+\begin{theorem}\label{xi'-integral}
+\[
+\sum_{[P]}\int_{(\partial C_y)_P} \theta^P_{\phi_{0,1}}(\tau,\calL_{W_P}) = 
+  \sum_{n>0}  \Lk(C_n,C_y) q^n
+ \; + \; \sum_{n \in \Q} \sum_{[P]} \int_{(\partial C_y)_{P}}  {\tilde{\psi}_{0,1}^P}(n)(\tau).
+\]
+ So the Fourier coefficients of the holomorphic part of $\int_{(\partial C_y)_P} \theta^P_{\phi}(\tau,\calL_{W_P})$ are the linking numbers of the cycles $\partial C_y$ and $ \partial C_n$ at the boundary component $e'(P)$.  
+ \end{theorem}
+
+\begin{remark}
+There is also another ``global'' proof for Theorem~\ref{xi'-integral}. The cycle $C_y$ intersects $e'(P)$ transversally (when pushed inside) and hence also the cap $A_n$. From this it is not hard to see that we can split the intersection number $C_n^c \cdot C_y$ as 
+\[
+C^c_n \cdot C_y  =  (C_n \cdot C_y)_X  -  \Lk(C_n,C_y).
+\]
+Hence Theorem~\ref{xi'-integral} also follows from combining \eqref{special-lift} and Theorem~\ref{interior-lift}. 
+\end{remark}
+
+Hirzebruch-Zagier also obtain the modularity of the functions given in Theorems~\ref{interior-lift} and \ref{xi'-integral}, but by quite different methods. In particular, they explicitly calculate the intersection number $T^c_n \cdot T_m$. They split the intersection number into the interior part $(T_n \cdot T_m)_X$ and a `boundary contribution' $(T_n \cdot T_m)_{\infty}$ given by 
+ \[
+ (T_n \cdot T_m )_{\infty} = (T_n \cdot T_m)_{\tilde{X}-X}  - ({T}_m-T_m^c) \cdot ({T}_n -T_n^c).
+ \]
+Now by Theorem~\ref{HZTheorem} and its proof we have
+\[
+T^c_n \cdot T_m = C^c_n \cdot C_m.
+\]
+We have (per definition) $(T_n \cdot T_m)_X = (C_n \cdot C_m)_X$, so Theorem~\ref{interior-lift} gives the generating series for $(T_n \cdot T_m)_X$. Note that Theorem~5.4 in \cite{FCompo} also compares the explicit formulas in \cite{HZ} for $(T_n \cdot T_m)_X$ with the ones obtained via  $\int_{C_y} \theta_{\varphi_2}(\tau,\calL_V)$. All this implies
+\[
+ (T_n \cdot T_m)_{\infty}  =\Lk( C_n \cdot C_m).
+ \]
+Independently, we also obtain this from comparing the explicit formulas for the boundary contribution in \cite{HZ}, Section~1.4 with our formulas for the linking numbers, Theorem~\ref{LinkCnCm} and Example~\ref{LinkCnCmex}.
+
+ 
+
+
+
+\section{A current approach for the special cycles}\label{currents}
+
+In this section we prove Theorem~\ref{FM-main-th}, the crucial Fourier coefficient formula for our lift $\Lambda^c$.  As a consequence of our approach we will also obtain Theorem~\ref{linking-dual}, the linking number interpretation for the lift at the boundary. 
+
+\subsection{A differential character for $C_n^c$}
+
+The key step for the entire Kudla-Millson theory is that for $n>0$ the form $\varphi_2(n)$ is a Poincar\'e dual form for the cycle $C_n$, i.e., 
+
+\begin{theorem}[\cite{KM2,KMCan}]
+Let $\eta$ be a closed rapidly decreasing $2$-form. Then 
+\[
+\int_X \eta \wedge  \varphi_2(n)= \left(\int_{C_n} \eta \right) e^{-2\pi n}.
+\]
+\end{theorem}
+
+To show this they employ at some point a homotopy argument which requires $\eta$ to be rapidly decaying. Since we require $\eta$ to be any closed $2$-form on the compactification $\overline{X}$, their approach is not applicable in our case. Instead, we use a differential character argument for $\varphi_2$ which implicitly already occurred in \cite{BFDuke}, Section~7 for general signature $(p,q)$. Namely, we have
+
+\begin{theorem} (\cite{BFDuke}, Section~7)\label{BrFu}
+Let $n>0$. 
+The singular form $ \tilde{\psi}_1(n)$ is a differential character in the sense of Cheeger-Simons for the cycle $C_n$. More precisely, $\tilde{\psi}_1(n)$ is a locally integrable $1$-form on $X$, and for any compactly supported $2$-form $\eta$ we have 
+\[
+\int_{X} \eta \wedge \varphi_2(n)  = \left(\int_{C_n}  \eta \right) e^{-2 \pi n}  - \int_{X}  d \eta\wedge \tilde{\psi}_1(n).
+\]
+\end{theorem}
+
+\begin{proof}
+This is the content of the proofs of Theorem~7.1 and Theorem~7.2 in \cite{BFDuke}. There the analogous properties for a singular theta lift associated to $\psi$ is established. However, the proofs boil down to establish the claims for $\tilde{\psi}_1$. The form $\tilde{\psi}$ there is indeed the form $\tilde{\psi}_1$ of this paper. 
+\end{proof}
+
+\begin{remark}\label{Kudla-xi}
+The form $\tilde{\psi}_1$ is closely related to Kudla's Green function $\xi$ \cite{KAnn97,KBforms} (more generally for $\Orth(p,2)$) which is given by 
+\[
+\xi(x) =   \left( \int_1^{\infty} \varphi_0^0(\sqrt{r}x)  \frac{dr}{r} \right) e^{- \pi (x,x) }.
+\]
+Then $\Xi(n) = \sum_{x\in\calL_n} \xi(x)$ gives rise to a Green's function for the divisor $C_n$ and moreover $dd^c \xi = \varphi_2$. Here $d^c = \tfrac{1}{4\pi i}(\partial - \overline{\partial})$. This suggests $d^c \xi = \tilde{\psi}_1$, which indeed follows from $d^c \varphi_0 = -\psi_1$, see \cite{BFDuke}, Remark~4.5. 
+\end{remark}
+
+For $n \in \Q$ we define
+\[
+ \varphi_2^c(n) :=  \varphi_2(n) - \sum_{[P]} d(f \pi^{\ast} \phi^P_{0,1}(n))
+\]
+and follow the current approach to show that for $n>0$ the form $\varphi_2^c(n)$
+is a Poincar\'e dual form for the cycle $C_n^c$. Here we follow the notation of subsection~\ref{mappingconesection}. That is, $\pi^{\ast} \phi^P_{0,1}(n)$ is the pullback to a product neighborhood $V$ of $\partial \overline{X}$, and $f$ is a smooth function on $V$ of the geodesic flow coordinate $t$ which is $1$ near $t=\infty$ and zero else. Note that  $\varphi_2^c(n)$ is exactly the $n$-th Fourier coefficient of the mapping cone element $[\theta_{\varphi},\theta_{\phi}]$, when realized as a rapidly decreasing form on $X$. We also define 
+\[
+\tilde{\psi}_1^c(n) = \tilde{\psi}_1(n) - f \pi^{\ast} \phi^P_{0,1}(n). 
+\]
+We call a differential form $\eta$ on $\overline{X}$ special if in a neighborhood of each boundary component $e'(P)$ it is the pullback of a form $\eta_P$ on $e'(P)$ under the geodesic retraction and if the pullback of the form $\eta_P$ to the universal cover $e(P)$ is $N$-left-invariant. The significance of the forms lies in the fact that the complex of special forms also computes the cohomology of $\overline{X}$. Note that the proof of Theorem~\ref{restriction} shows that $\theta_{\varphi_2}$ is `almost' special; it only differs from a special form by a rapidly decreasing form. 
+
+
+
+
+\begin{theorem}\label{newcurrenteq}
+Let $n>0$. The form $ \tilde{\psi}_1^c(n)$ is a differential character for the cycle $C^c_n$. More precisely, $\tilde{\psi}_1^c(n)$ is a locally integrable $1$-form on $X$ and satisfies the following current equation on special $2$ forms on $\overline{X}$:
+\[
+d[\tilde{\psi}_1^c(n)] + \delta_{C_n}  e^{-2\pi n} = [\varphi_2^c(n)].
+\]
+That is, for any special $2$-form $\eta$ on $\overline{X}$ we have 
+\[
+\int_{X} \eta \wedge \varphi^c_{2}(n)  = \left(\int_{C^c_n}  \eta \right) e^{-2 \pi n} - \int_{X}  d\eta \wedge \tilde{\psi}^c_{2}(n).
+\]
+\end{theorem}
+
+This implies Theorem~\ref{FM-main-th} for the positive Fourier coefficients. For $n\leq 0$, the form $\varphi^c_{2}(n)$ is exact with primitive $\tilde{\psi}^c_{2}(n)$ which by Theorem~\ref{psitilderes} is decaying. So Theorem~\ref{newcurrenteq} holds also for $n \leq 0$ with $C_n^c = \emptyset$. Hence for the these coefficients only the term $x=0$ contributes, which gives the integral of $\eta$ against the K\"ahler form. 
+
+\begin{remark}\label{Kudla-modification}
+In view of Remark~\ref{Kudla-xi} it is very natural question to ask how one can modify Kudla's Green's function $\Xi(n)$ to obtain a Green's function for the cycle $T_n^c$ in $\tilde{X}$. Extensive discussions with K\"uhn suggest that (if $X$ has only one cusp) 
+\[
+\Xi(n) - t \sum_{\substack{x \in \calL_W\\ (x,x)=2n}} f \pi^{\ast}(B(x)+B'(x))
+\]
+is such a Green's function, but we have not checked all details.
+\end{remark}
+
+
+\subsection{Proof of Theorem~\ref{newcurrenteq} }\label{8.1}
+
+For simplicity assume that $X$ has only one cusp and continue the drop the superscript $P$. We let $\rho_{T}$ be a family of smooth functions on a standard fundamental domain $\calF$ of $\G$ in $D$ only depending on $t$ which is $1$ for $t\leq T$ and $0$ for $T+1$. We then have 
+\begin{align*}
+\int_{X} \eta \wedge \varphi^c_{2}(n)  &= \lim_{T\to \infty} \int_{X} \rho_T \eta \wedge
+\left(\varphi_2(n) -  d(f \pi^{\ast} \phi_{0,1}(n)) \right). 
+\end{align*}
+We apply Theorem~\ref{BrFu} for the compactly supported form $\rho_T\eta$ and obtain
+\begin{align}\label{eq1}
+\int_{X} \eta \wedge \varphi^c_{2}(n&)=  \lim_{T\to \infty} \Biggl[ \left(\int_{C_n}  \rho_T \eta \right) e^{- 2\pi n} - \int_{X}  d (\rho_T \eta) \wedge \tilde{\psi}_1(n) \\
+& \quad - \int_X  d\left( \rho_T \eta \wedge (f \pi^{\ast} \phi_{0,1}(n)) \right) - d(\rho_T \eta) \wedge f \pi^{\ast} \phi_{0,1}(n) \Biggr] \notag
+\end{align}
+The first term on the right hand side of \eqref{eq1} goes to $\left(\int_{C_n} \eta\right)e^{-2\pi n}$ as $T \to \infty$, while the third vanishes for any $T$ by Stokes' theorem. For the two remaining terms of \eqref{eq1} we first note $d(\rho_T \eta) = \rho_T'(t) dt \wedge \eta + \rho_T d\eta$ and  $\rho_T'(t)=0$ outside $[T,T+1]$. We obtain for these two terms
+\begin{multline}\label{eq2}
+-  \int_{X}  (d \eta) \wedge \left( \tilde{\psi}_1(n) - f \pi^{\ast} \phi_{0,1}(n) \right) \\ - \lim_{T\to \infty} \int_T^{T+1} \int_{e'(P)} \rho_T'(t)dt \wedge \eta \wedge \left( \tilde{\psi}_1(n) - f  \pi^{\ast}\phi_{0,1}(n)\right). 
+\end{multline}
+It remains to compute the second term in the previous equation. For $T$ sufficiently large we have $f \equiv 1$. Furthermore by Theorem~\ref{psitilderes} and its proof we have $\tilde{\psi}_1(n) = \pi^{\ast} \tilde{\psi}_{0,1}(n) + O(e^{-Ct})$. As
+$\phi_{0,1}(n) = \tilde{\psi}_{0,1}(n)+\tilde{\psi}'_{0,1}(n)$, we can replace  
+$\tilde{\psi}_1(n) - f  \pi^{\ast}\phi_{0,1}(n)$ by $-\pi^{\ast} \tilde{\psi'}_{0,1}(n)$. Since $\eta$ is special it does not depend on the $t$-variable near the boundary. For the last term in \eqref{eq2}
+\[
+ \lim_{T\to \infty} \int_T^{T+1}  \rho_T'(t)dt \int_{e'(P)} \eta \wedge \pi^{\ast} \tilde{\psi'}_{0,1}(n) = -  \int_{e'(P)} \eta \wedge \tilde{\psi'}_{0,1}(n) = -
+\left(\int_{A_n} \eta \right) e^{-2\pi n}.
+\]
+Indeed, for $\eta = \Omega$ this is Remark~\ref{youwillneedthis}. Otherwise, $\eta$ is exact with special primitive $\omega$, and it is not hard to see that the proof of Proposition~\ref{finalintegral} carries over to this situation. Since $C_n^c = C_n \coprod (-A_n)$ collecting all terms completes the proof of Theorem~\ref{newcurrenteq}. 
+
+
+
+
+
+
+
+
+\begin{thebibliography}{99}
+
+
+
+
+\bibitem{BMM}
+N. Bergeron, J. Millson, and C. Moeglin, \emph{Hodge type theorems for arithmetic manifolds associated to orthogonal groups}, preprint.
+
+
+
+\bibitem{BJ}
+A. Borel and L. Ji, \emph{Compactifications of symmetric and locally
+symmetric spaces}, Birkh\"auser, 2006.
+
+
+
+\bibitem{BorelSerre} A. Borel and J.-P. Serre, {\em Corners and arithmetic groups}, Commentarii Mathematici Helvetici \textbf{48} (1973), 436-491.
+
+
+
+
+
+\bibitem{B-123}
+J. Bruinier, \emph{Hilbert modular forms and their applications}, in: The 1-2-3 of Modular Forms, Springer-Verlag (2008). 
+
+
+
+
+\bibitem{BFDuke}
+J. Bruinier and J. Funke, \emph{On two geometric theta lifts}, Duke
+Math J. \textbf{125} (2004), 45-90.
+
+
+\bibitem{Cogdell}
+J. Cogdell.
+\emph{Arithmetic cycles on Picard modular surfaces and modular forms of Nebentypus}, J. Reine u. Angew. Math. \textbf{357} (1985), 115-137.
+
+\bibitem{DG}
+D. DeTurck and H. Gluck, \emph{Electrodynamics and the Gauss linking integral on the 3-sphere and in hyperbolic 3-space}, J. Math. Phys. \textbf{49}, (2008) 
+
+\bibitem{F}
+H. Flanders, \emph{Differential forms with applications to the physical sciences},
+Mathematics in Science and Engineering \textbf{11} (1963), Academic Press.
+
+
+\bibitem{FCompo}
+J. Funke, \emph{Heegner divisors and nonholomorphic modular forms},
+Compositio Math. \textbf{133} (2002), 289-321.
+
+\bibitem{F-unitary}
+J. Funke, \emph{Singular theta liftings for unitary groups and the construction of Green currents for special cycles}, in preparation.
+
+
+
+\bibitem{FM1}
+J. Funke and J. Millson, \emph{Cycles in hyperbolic manifolds of
+non-compact type and Fourier coefficients of Siegel modular forms},
+Manuscripta Math. \textbf{107} (2002), 409-449.
+
+
+\bibitem{FMcoeff}
+J. Funke and J. Millson, \emph{Cycles with local coefficients for
+orthogonal groups and vector-valued Siegel modular forms}, American J. Math. \textbf{128}, 899-948 (2006)
+
+\bibitem{FMres}
+J. Funke and J. Millson, \emph{Boundary behavior of special cohomology classes arising from the Weil representation}, preprint. 
+
+\bibitem{FMspec}
+J. Funke and J. Millson, \emph {Spectacle cycles with coefficients and modular forms of half-integral weight}, to appear in: Arithmetic Geometry and Automorphic forms, Volume in honor of the 60th birthday of Stephen S. Kudla, Advanced Lectures in Mathematics series. International Press and the Higher Education Press of China (2011).
+
+\bibitem{FM-Cogdell}
+J. Funke and J. Millson, in preparation.
+
+
+\bibitem{HZ}
+F. Hirzebruch and D. Zagier, \emph{Intersection numbers of curves on
+Hilbert modular surfaces and modular forms of Nebentypus}, Inv.
+Math. \textbf{36} (1976), 57-113.
+
+
+
+
+
+
+\bibitem{HoffmanHe}
+W.\ Hoffman and H. He, \emph{Picard groups of Siegel modular threefolds and theta lifting}, preprint.
+ 
+
+\bibitem{KAnn97}
+S. Kudla, \emph{Central derivatives of Eisenstein series and height
+pairings}, Ann. of Math. \textbf{146} (1997), 545-646.
+
+
+\bibitem{KBforms}
+S. Kudla, \emph{Integrals of Borcherds forms}, Compositio Math.
+\textbf{137} (2003), 293-349.
+
+\bibitem{Kmsri}
+S. Kudla, \emph{Special cycles and derivatives of Eisenstein
+series}, in: Heegner points and Rankin $L$-series, 243-270, Math.
+Sci. Res. Inst. Publ., \textbf{49}, Cambridge Univ. Press, 2004.
+
+
+
+\bibitem{KM1}
+S. Kudla and J. Millson, \emph{The theta correspondence and harmonic
+forms I}, Math. Ann. \textbf{274} (1986), 353-378.
+
+
+\bibitem{KM2}
+S. Kudla and J. Millson,
+\emph{The Theta Correspondence and Harmonic Forms II},
+Math. Ann. \textbf{277} (1987), 267-314.
+
+\bibitem{KMCan}
+S. Kudla and J. Millson,
+\emph{Tubes, cohomology with growth
+conditions and application to the theta correspondence}, Canad. J.
+Math. \textbf{40} (1988), 1-37.
+
+\bibitem{KM90}
+S. Kudla and J. Millson, \emph{Intersection numbers of cycles on
+locally symmetric spaces and Fourier coefficients of holomorphic
+modular forms in several complex variables}, IHES Pub. \textbf{71}
+(1990), 121-172.
+
+
+
+
+\bibitem{Milnor}
+J. Milnor,
+\emph{Singularities of Complex Hypersurfaces},
+Annals of Math. Studies {\bf 61}, Princeton University Press, 1968.
+
+
+
+\bibitem{Oda}
+T. Oda,
+\emph{On modular forms associated with indefinite quadratic forms of signature $(2,n-2)$},
+Math. Annalen \textbf{231} (1977), 97-144.
+
+
+\bibitem{Shintani} 
+T. Shintani, \emph{On the construction of
+holomorphic cusp forms of half integral weight}, Nagoya Math. J.
+\textbf{58} (1975), 83-126.
+
+
+
+
+
+\bibitem{vGeer}
+G. van der Geer, \emph{Hilbert modular surfaces}, Ergebnisse der
+Math. und ihrer Grenzgebiete (3), vol. \textbf{16}, Springer, 1988.
+
+
+\bibitem{Weibel}
+C.\ A. \  Weibel, \emph{An introduction to homological algebra}, Cambridge studies in advanced mathematics, vol. 
+\textbf{38}, Cambridge University Press, 1994.
+
+
+
+
+
+\end{thebibliography}
+
+
+
+
+
+
+

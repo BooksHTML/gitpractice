@@ -1,0 +1,60 @@
+\begin{proposition}\label{rat-cap}
+Let $x \in \mathcal{L}_{n,u}$ with $n>0$. Then there exists a rational $2$-chain $a_x$ in $e'(P)$ such that
+\begin{enumerate}
+\item $\partial a_x = c_x$
+\item $\int_{a_x} \Omega_P = 0$, here $\Omega_P$ is the area form for the fibers (see \eqref{areaform}) 
+\end{enumerate}
+
+\end{proposition}
+ 
+
+\begin{proof}
+
+Except for the rationality of the cap this follows immediately from Proposition~\ref{TnBS}. The problem is to find a cap $a_x$ such that $\int_{a_x} \Omega_P \in \Q$. We will prove this in Section~\ref{rat-cap11} below. 
+\end{proof}
+
+We will define $(A_x)_P$ by $(A_x)_P = \sum_{y \in [x]} a_x$. Then sum over the components $e'(P)$ to obtain $A_x$ a rational $2$-chain 
+in $\partial X$. Then we have (noting that $(\partial C_x)_P = \sum_{y \in [x]} c_y$)
+\[
+\partial A_x = \partial C_x.
+\]
+
+
+
+
+\begin{definition}
+We define the rational absolute $2$-cycle in $\overline{X}$ by 
+\[
+C_x^c = C_x \cup (-A_x)
+\]
+with the $2$-chain $A_x$  in $\partial \overline{X}$ as in Proposition~\ref{rat-cap}. In particular, $C_x^c$ defines a class in $H_2(\overline{X}) = H_2(X)$. In the same way we obtain $C_n^c$. 
+\end{definition}
+
+
+\subsection{The closure of the special cycles in $\tilde{X}$ and the cycle $T_n^c$}
+\ \\
+$\text{Following Hirzebruch-Zagier we let $T_n$ be the cycle in $\tilde{X}$}$\\ given by the closure of the cycle $C_n$ in $\tilde{X}$. Hence $T_n$ defines a class in $H_2(\tilde{X})$.
+
+
+\begin{definition}
+Consider the decomposition $H_2(\tilde{X}) = j_{\ast} H_2(X) \oplus \left( \oplus_{[P]} S_{p
+} \right)$, which is orthogonal with respect to the intersection pairing on $\tilde{X}$. We let $T_n^c$ be the image of $T_n$ under orthogonal projection onto the summand $j_{\ast} H_2(X)$.
+\end{definition}
+
+\begin{proposition}\label{CnTn}
+We have
+\[
+j_{\ast} C_n^c = T_n^c.
+\]
+\end{proposition}
+
+\begin{proof}
+For simplicity, we assume that $X$ has only one cusp. The $3$-manifold $e'(P)$ separates $T_n$
+and  we can write $T_n = T_n \cap X^{in} + T_n \cap X^{out}$ as (appropriately oriented)  $2$-chains  in $\tilde{X}$. It is obvious that we have $j_{\ast} \overline{C}_n = T_n \cap X^{in}$ as $2$-chains. We write $B_n = T_n \cap X^{out}$. We have $\partial C_n = - \partial B_n$. Hence we can write $T_n = j_{\ast} C_n^c + B_n^c$, the sum of two  $2$-cycles in $\tilde{X}$. Here $B_n^c$ is obtained by `capping' $B_n$ in $e'(P)$ with the negative of the cap $A_n$ of $C_n^c$. 
+Since  $j_*C_n^c$  is clearly orthogonal to $S_P$ (since it lies in $X^{in}$) and $B_n^c \in
+S_P$ (since it lies in $X^{out}$)
+the decomposition $T_n = j_*C_n^c + B_n^c$ is just the decomposition of
+$T_n$ relative to the splitting $H_2(\tilde{X}) = j_*H_2(X)  \oplus S_P$.
+Hence $T_n^c =  j_*C_n^c$, as claimed.
+\end{proof}
+

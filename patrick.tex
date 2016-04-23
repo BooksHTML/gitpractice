@@ -1,0 +1,47 @@
+\subsection{Schwartz forms for $W$}
+
+
+
+
+Let $W\subset V$ be the rational quadratic space of signature\\ $(1,1)$ obtained from the Witt decomposition of $V$. We will\\ refer to the nullcone of $W$ as the light-cone. We write\\
+$\mathfrak{m} \simeq \R$ for the Lie algebra of $M = \SO_0(W_{\R})$.\\ Then $X_{23} = e_2 \wedge e_3$ is its\\
+natural generator with\\dual $\omega_{23}$.\\
+We identify the associated symmetric space $D_W$\\
+to $M$ with the space of lines in $W_{\R}$ on which\\
+the bilinear form $(\,,\,)$ is negative definite: \[D_W = \{{\bf s} \subset W_{\R} ; \;\text{$\dim {\bf s} =1$ and $(\,,\,)|_{\bf s} < 0$} \}. \] We pick as base point of $D_W$\\
+the line ${\bf s}_0$ spanned by $e_3$.\\
+We set $ x(s) := m(s) e_3 = \sinh(s) e_2 + \cosh(s) e_3$. This realizes the isomorphism\\
+$D_W \simeq \R$. Namely, ${\bf s} = \Span x(s)$.\\
+Accordingly, we frequently write $s$ for ${\bf s}$ and vice versa. A vector $x \in W$ of positive length defines a point $D_{W,x}$ in $D$ via $D_{W,x} = \{ {\bf s} \in D; \; {\bf s} \perp x \}$. So ${\bf s} = D_{W,x}$ if and only if $(x,x({\bf s})) =0$. We also write ${\bf s}(x)=D_{W,x}$.
+\subsubsection{Special forms for $W$}\label{W-forms}
+
+We carry over the conventions from section~\ref{conventions}. We first consider the Schwartz form $\varphi_{1,1}$ on $W_{\R}$ constructed in \cite{FMcoeff} (in much greater generality) with values in $\calA^1(D_W) \otimes W_{\C}$. More precisely,
+\[
+\varphi_{1,1} \in [\calS(W_{\R}) \otimes \calA^1(D_W) \otimes W_{\C}]^M \simeq
+[\calS(W_{\R}) \otimes \mathfrak{m}^{\ast} \otimes W_{\C}],
+\]
+Here $M$ acts diagonally on all three factors. Explicitly at the base point, we have
+\begin{equation*}
+\varphi_{1,1}(x) = \frac{1}{2^{3/2}} \left(4 x_2^2-\frac1{\pi}\right) e^{-\pi (x_2^2+x_3^2)} \otimes \omega_{23} \otimes e_2.
+\end{equation*}
+Note that $\varphi_{1,1}$ has weight $2$, see \cite{FMcoeff}, Theorem~6.2. We define $\varphi_{1,1}(x,s)$ and $\varphi_{1,1}^0$ as before. There is another Schwartz function $\psi_{0,1}$ of weight $0$ given by
+\begin{multline*}
+\psi_{0,1}(x) =   -\frac1{\sqrt{2}} x_2x_3 e^{-\pi(x_2^2+x_3^2)}  \otimes 1 \otimes e_2 + \frac{1}{4\sqrt{2}\pi} e^{-\pi(x_2^2+x_3^2)} \otimes 1\otimes e_3 \\ \in
+[\calS(W_{\R}) \otimes \wwedge{0} \mathfrak{m}^{\ast} \otimes W_{\C}],
+\end{multline*}
+and also $\psi_{0,1}(x,s)$ and $\psi_{0,1}^0$. Note that the notation differs from \cite{FMcoeff}, section~6.5. The function $\psi_{0,1}$ defined here is the term $-\psi_{1,1} - \tfrac12 \Lambda_{1,1}$ given in Theorem~6.11 in \cite{FMcoeff}. 
+The key relation between $\varphi_{1,1}$ and $\psi_{0,1}$ (correcting a sign mistake in \cite{FMcoeff}) is given by
+
+\begin{theorem}(\cite{FMcoeff}, Theorem~6.2\label{Millson})\label{localholW}
+\[
+\omega(L) \varphi_{1,1} = d \psi_{0,1}.
+\]
+\end{theorem}
+
+When made explicit, we have, again using \eqref{group-tau},
+\begin{equation}
+v^{3/2} \frac{\partial}{\partial v } \left(v^{-1/2} \varphi_{1,1}^0(\sqrt{v}x,s) \right)=  d
+\left(\psi_{0,1}^0(\sqrt{v}x,s)\right).
+\end{equation}
+
+
