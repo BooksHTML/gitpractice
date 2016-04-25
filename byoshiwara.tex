@@ -1,4 +1,12 @@
-We also have a crucial restriction result for the singular form ${ \tilde{\psi}_{0,1}}$. However, one needs to be careful in forming the naive theta series associated to $\tilde{\psi}_{0,1}$ by summing over all (non-zero) lattice elements. This would give a form on $X$ with singularities on a dense subset of $X$. Instead we define $\tilde{\psi}_{{2,0}}(n)$ in the same way as for $\varphi_2(n)$ by summing over all non-zero $x \in \calL_V$ of length $n \in \Q$. This gives a $1$-form on $X$ which for $n>0$ has singularities along the locally finite cycle $C_n$. Similarly, we define
+We also have a crucial restriction result for the singular form ${
+\tilde{\psi}_{0,1}}$. However, one needs to be careful in forming
+the naive theta series associated to $\tilde{\psi}_{0,1}$ by summing
+over all (non-zero) lattice elements. This would give a form on $X$
+with singularities on a dense subset of $X$. Instead we define
+$\tilde{\psi}_{{2,0}}(n)$ in the same way as for $\varphi_2(n)$ by
+summing over all non-zero $x \in \calL_V$ of length $n \in \Q$.
+This gives a $1$-form on $X$ which for $n>0$ has singularities along
+the locally finite cycle $C_n$. Similarly, we define
 \[
 \tilde{\psi}_{0,1}^P(n)= \sum_{\substack{x \in \calL_{W_P}, (x,x)=2n}} \tilde{\psi}_{0,1}^P(x),
 \]
@@ -15,11 +23,22 @@ i_P^{\ast} \tilde{\psi}_1(n) = \tilde{\psi}_{0,1}^P(n).
 \end{proposition}
 
 \begin{proof}
-We assume that $P$ is the stabilizer of the isotropic line $\ell=\Q u$. For $x = au + x_W + bu'$, we have for the majorant at $z=(w,t,s)$ the formula
+We assume that $P$ is the stabilizer of the isotropic line $\ell=\Q
+u$. For $x = au + x_W + bu'$, we have for the majorant at $z=(w,t,s)$
+the formula
 \[
 (x,x)_z = \frac1{t^2}(a-(x_W,w)-bq(w))^2 + (x_w+bw,x_w+bw)_s +b^2t^2.
 \]
-Here $(\,,\,)_s$ is the majorant associated to $W$. Hence by \eqref{GreeneqV} and \eqref{psi20} we see that the sum of all $x \in \calL_V$ with $b \ne 0$ in $\tilde{\psi}_1(n)$ is uniformly rapidly decreasing as $t \to \infty$. Now fix an element $x_W \in \calL_W$. Then  $x_W +(a+h)u \in \calL_V$ for all $a \in \Z$ for some $h \in \Q/\Z$; in fact all elements in $\calL_V \cap u^{\perp}$ are of this form. We consider $\sum_{a \in \Z} \tilde{\psi}_1(x_W +(a+h)u,z)$ as $t \to \infty$. By considerations as in \cite{FMres}, sections 4 and 9, we can assume $w=0$ and $s=0$. We apply Poisson summation for the sum on $a \in \Z$ and obtain
+Here $(\,,\,)_s$ is the majorant associated to $W$. Hence by
+\eqref{GreeneqV} and \eqref{psi20} we see that the sum of all $x
+\in \calL_V$ with $b \ne 0$ in $\tilde{\psi}_1(n)$ is uniformly
+rapidly decreasing as $t \to \infty$. Now fix an element $x_W \in
+\calL_W$. Then  $x_W +(a+h)u \in \calL_V$ for all $a \in \Z$ for
+some $h \in \Q/\Z$; in fact all elements in $\calL_V \cap u^{\perp}$
+are of this form. We consider $\sum_{a \in \Z} \tilde{\psi}_1(x_W
++(a+h)u,z)$ as $t \to \infty$. By considerations as in \cite{FMres},
+sections 4 and 9, we can assume $w=0$ and $s=0$. We apply Poisson
+summation for the sum on $a \in \Z$ and obtain
 \begin{align*}
 \sum_{a \in \Z} \tilde{\psi}_1(x_W +au,z) = \sum_{k \in \Z} \left( \int_{1}^{\infty} P(x,t,r) e^{-2\pi x_3^2r +t^2k^2/r} \frac{dr}{r} \right) e^{-2\pi i k h} e^{-\pi (x_W,x_W)},
 \end{align*}
@@ -51,7 +70,13 @@ immediately obtain by Theorem~\ref{restriction} and Theorem~\ref{globalexact}\\
 The pair $(\theta_{\varphi_2}(\calL_V), \sum_{[P]} \theta^P_{\phi_{0,1}}(\calL_{W_P}))$ is a $2$-cocycle in $C^{\bullet}$.
 \end{proposition}
 
-We write for short $(\theta_{\varphi},\theta_{\phi})$. We obtain a class $[[\theta_{\varphi},\theta_{\phi}]]$ in $H^2(C^{\bullet})$ and hence a class $[\theta_{\varphi},\theta_{\phi}]$ in $H^2_c(X)$. The pairing with $[\theta_{\varphi}, \theta_{\phi}]$ then defines a lift $\Lambda^c$ on differential $2$-forms on $\overline{X}$, which factors through $H^2(\overline{X}) = H^2(X)$. By Lemma~\ref{integralformula} it is given by 
+We write for short $(\theta_{\varphi},\theta_{\phi})$. We obtain a
+class $[[\theta_{\varphi},\theta_{\phi}]]$ in $H^2(C^{\bullet})$
+and hence a class $[\theta_{\varphi},\theta_{\phi}]$ in $H^2_c(X)$.
+The pairing with $[\theta_{\varphi}, \theta_{\phi}]$ then defines
+a lift $\Lambda^c$ on differential $2$-forms on $\overline{X}$,
+which factors through $H^2(\overline{X}) = H^2(X)$. By
+Lemma~\ref{integralformula} it is given by
 \[
 \Lambda^c(\eta,\tau) =  \int_{\overline{X}} \eta \wedge \theta_{\varphi_2} - \sum_{[P]}  \int_{e'(P)} i^*\eta \wedge \theta^P_{\phi_{0,1}}.
 \]

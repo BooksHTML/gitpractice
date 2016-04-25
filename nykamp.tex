@@ -4,17 +4,31 @@
 
 \subsection{Global theta functions for $W$}
 
-We let $\calL_W$ be a $\G_P$-invariant (coset of a) lattice in $W$, where $\G_N$ acts trivially on $W$. For $\varphi_{1,1}$, we define its theta function by 
+We let $\calL_W$ be a $\G_P$-invariant (coset of a) lattice in $W$,
+where $\G_N$ acts trivially on $W$. For $\varphi_{1,1}$, we define
+its theta function by
 \[
 \theta_{\varphi_{1,1}}(\tau,{\calL_W})= \sum_{x \in \calL_W} \varphi_{1,1}(x,\tau)
 \]
-and similarly for $\psi_{0,1}$, and $\phi_{0,1}$. Then the usual theta machinery gives that
-$\theta_{\varphi_{1,1}}(\tau,{\calL_W})$ and $\theta_{\phi_{0,1}}(\calL_W)$ both transform like (non)-holomorphic modular forms of weight $2$ for some congruence subgroup of $\Sl_2(\Z)$. 
+and similarly for $\psi_{0,1}$, and $\phi_{0,1}$. Then the usual
+theta machinery gives that
+$\theta_{\varphi_{1,1}}(\tau,{\calL_W})$ and $\theta_{\phi_{0,1}}(\calL_W)$
+both transform like (non)-holomorphic modular forms of weight $2$
+for some congruence subgroup of $\Sl_2(\Z)$.
 
 \begin{remark}
-The claim is not obvious for $\theta_{\phi_{0,1}}$, since $\phi_{0,1}$ is not a Schwartz function. In that case, we use Proposition~\ref{phi-prop}. The component $B+B'$ of $\phi_{0,1}$ is $C^2$ outside the light cone. Since $W$ is anisotropic we can then apply Possion summation, and this component transforms like a modular form. Then apply the differential operator $X_{23}$ to obtain the same for the other component $A+A'$ of $\phi_{0,1}$. 
+The claim is not obvious for $\theta_{\phi_{0,1}}$, since $\phi_{0,1}$
+is not a Schwartz function. In that case, we use
+Proposition~\ref{phi-prop}. The component $B+B'$ of $\phi_{0,1}$
+is $C^2$ outside the light cone. Since $W$ is anisotropic we can
+then apply Possion summation, and this component transforms like a
+modular form. Then apply the differential operator $X_{23}$ to
+obtain the same for the other component $A+A'$ of $\phi_{0,1}$.
  
- In fact, if $W$ is isotropic and $\calL_W$ intersects non-trivially with the light cone, then $\theta_{\phi_{0,1}}$ is not quite a modular form. The case, when the $\Q$-rank of $V$ is $2$ is interesting in its own right. We will discuss this elsewhere. 
+ In fact, if $W$ is isotropic and $\calL_W$ intersects non-trivially
+ with the light cone, then $\theta_{\phi_{0,1}}$ is not quite a
+ modular form. The case, when the $\Q$-rank of $V$ is $2$ is
+ interesting in its own right. We will discuss this elsewhere.
 \end{remark}
 
 
@@ -22,9 +36,13 @@ The claim is not obvious for $\theta_{\phi_{0,1}}$, since $\phi_{0,1}$ is not a 
 
 
 
-Via the map $\iota_P$ from Section~\ref{iotaP} we can view all theta functions for $W$ as functions resp. differential forms on $e'(P)$. We set $
+Via the map $\iota_P$ from Section~\ref{iotaP} we can view all theta
+functions for $W$ as functions resp. differential forms on $e'(P)$.
+We set $
 \theta^P_{\varphi_{1,1}} =   \theta_{\varphi_{1,1}^P}$, 
-and similarly $\theta^P_{\psi_{0,1}}$ and $\theta^P_{\phi_{0,1}}$. Since $\iota_P$ is a map of complexes we immediately see by Theorem~\ref{localholW} and Theorem~\ref{local-phi}
+and similarly $\theta^P_{\psi_{0,1}}$ and $\theta^P_{\phi_{0,1}}$.
+Since $\iota_P$ is a map of complexes we immediately see by
+Theorem~\ref{localholW} and Theorem~\ref{local-phi}
 
 \begin{proposition}\label{globalholomorphic2}
 \[
@@ -33,12 +51,16 @@ L \theta^P_{\phi_{0,1}} = \theta^P_{\psi_{0,1}}.
 \]
 \end{proposition}
 
-We now interpret the (holomorphic) Fourier coefficients of the boundary theta lift associated to $ \theta^P_{\phi}(\tau,\calL_{W_P})$. They are given by linking numbers. We have
+We now interpret the (holomorphic) Fourier coefficients of the
+boundary theta lift associated to $ \theta^P_{\phi}(\tau,\calL_{W_P})$.
+They are given by linking numbers. We have
 
 
 \begin{theorem}\label{xi'-integralP}
 Let $c$ a \bf{homological trivial} $1$-cycle in $e'(P)$ which
-is disjoint from the torus fibers containing components of $\partial C_n$ or for $c=\partial C_y$ for $C_y$ one of the components of $C_n$, we have
+is disjoint from the torus fibers containing components of $\partial
+C_n$ or for $c=\partial C_y$ for $C_y$ one of the components of
+$C_n$, we have
 \[
 \int_{c} \theta^P_{\phi_{0,1}}(\tau,\calL_{W_P}) = 
   \sum_{n=1}^{\infty}  \Lk((\partial C_n)_P,c) q^n
@@ -61,10 +83,16 @@ where $\beta(s) = \tfrac1{16\pi} \int_1^{\infty} e^{-st}t^{-3/2} dt$. This is (u
 
 \subsection{Linking numbers, de Rham cohomology and linking duals} \label{generallinking}
 We begin with a general discussion of integral formulas for linking numbers.
-Such formulas go back to the classical Gauss-Amp\`ere formula for $\R^3$, see \cite{F}, p.79-81, and \cite{DG} for its generalization to $S^3$ and $H^3$. 
-Suppose now that $c$ is a $1$-cycle in an oriented compact $3$-manifold M that is a rational boundary and $U$ is a tubular neighborhood of $c$. 
+Such formulas go back to the classical Gauss-Amp\`ere formula for
+$\R^3$, see \cite{F}, p.79-81, and \cite{DG} for its generalization
+to $S^3$ and $H^3$.
+Suppose now that $c$ is a $1$-cycle in an oriented compact $3$-manifold
+M that is a rational boundary and $U$ is a tubular neighborhood of
+$c$.
 \begin{definition}
-We will say any closed form $\beta$ in $M-U$ is a {\it linking dual} (relative to $U$) of the bounding $1$-cycle $c$ if for any $1$-cycle $a$ in $M-U$
+We will say any closed form $\beta$ in $M-U$ is a {\it linking dual}
+(relative to $U$) of the bounding $1$-cycle $c$ if for any $1$-cycle
+$a$ in $M-U$
 which is a rational boundary in $M$ we have
 \begin{equation*} \label{linkingdualdef} 
 \int_a \beta = \Lk(a,c).

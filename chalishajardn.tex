@@ -1,29 +1,64 @@
-The geometric theta correspondence of Kudla-Millson \cite{KM90} for the cocycle $\varphi^V_{2}$ in this situation takes the following shape. For a {\it compact} cycle $C$ in $X$, we have that 
+The geometric theta correspondence of Kudla-Millson \cite{KM90} for
+the cocycle $\varphi^V_{2}$ in this situation takes the following
+shape. For a {\it compact} cycle $C$ in $X$, we have that
 \begin{equation}\label{KM-id}
 \langle \theta_{\varphi^V_{2}}, C \rangle =  \int_C  \theta_{\varphi^V_{2}}= \sum_{n \geq 0} (C_n \cdot C) q^n
 \end{equation}
-is a holomorphic modular form of weight $2$ and is equal to the generating series of the  intersection numbers with $C_n$. Here $q = e^{2\pi i \tau}$ with $\tau \in \h$. 
-(There is a similar statement for the pairing of $\theta_{\varphi^V_{2}}$ with a closed {\it compactly supported} differential $2$-form on ${X}$ representing a class in $H^2_c(X)$, see Theorem~\ref{KM90}). Our first result is 
+is a holomorphic modular form of weight $2$ and is equal to the
+generating series of the  intersection numbers with $C_n$. Here $q
+= e^{2\pi i \tau}$ with $\tau \in \h$.
+(There is a similar statement for the pairing of $\theta_{\varphi^V_{2}}$
+with a closed {\it compactly supported} differential $2$-form on
+${X}$ representing a class in $H^2_c(X)$, see Theorem~\ref{KM90}).
+Our first result is
 
 \begin{theorem}\label{FM-boundaryexact}  (Theorem~\ref{globalexact})
-The \bf{differential form} $\theta_{\varphi^V_{2}}$ on $X$ extends to a form on $\overline{X}$, and the restriction $k^{\ast}$ of $\theta_{\varphi^V_{2}}$ to $\partial \overline{X}$ gives an {\it exact} differential form on $\partial\overline{X}$. Moreover, there exists a theta series $\theta_{\phi_1^W}$ for a space $W$ of signature $(1,1)$  of weight $2$ with values in the $1$-forms on $\partial \overline{X}$ such that $\theta_{\phi_1^W}$ is a primitive for $k^{\ast} \theta_{\varphi^V_{2}}$:
+The \bf{differential form} $\theta_{\varphi^V_{2}}$ on $X$ extends
+to a form on $\overline{X}$, and the restriction $k^{\ast}$ of
+$\theta_{\varphi^V_{2}}$ to $\partial \overline{X}$ gives an {\it
+exact} differential form on $\partial\overline{X}$. Moreover, there
+exists a theta series $\theta_{\phi_1^W}$ for a space $W$ of signature
+$(1,1)$  of weight $2$ with values in the $1$-forms on $\partial
+\overline{X}$ such that $\theta_{\phi_1^W}$ is a primitive for
+$k^{\ast} \theta_{\varphi^V_{2}}$:
 \[
 d (\theta_{\phi_1^W}) = k^{\ast} \theta_{\varphi^V_{2}}.
 \]
 \end{theorem}
 
-Considering the mapping cone for the inclusion $k: \partial \overline{X} \hookrightarrow \overline{X}$ (see Section~\ref{mappingconesection}) we then view the pair $[\theta_{\varphi^V_{2}}, \theta_{\phi_1^W}]$ as an element of the compactly supported cohomology $H^2_c(X)$. Explictly, let $C$ be a relative cycle in $\overline{X}$ representing a class in $H_2({X},\partial {X},\Z)$. Then the Kronecker pairing between $[\theta_{\varphi^V_{2}}, \theta_{\phi_1^W}]$ and $C$ is given by
+Considering the mapping cone for the inclusion $k: \partial
+\overline{X} \hookrightarrow \overline{X}$ (see
+Section~\ref{mappingconesection}) we then view the pair
+$[\theta_{\varphi^V_{2}}, \theta_{\phi_1^W}]$ as an element of the
+compactly supported cohomology $H^2_c(X)$. Explictly, let $C$ be a
+relative cycle in $\overline{X}$ representing a class in $H_2({X},\partial
+{X},\Z)$. Then the Kronecker pairing between $[\theta_{\varphi^V_{2}},
+\theta_{\phi_1^W}]$ and $C$ is given by
 \begin{equation}\label{mappingconelift}
 \langle [\theta_{\varphi^V_{2}}, \theta_{\phi_1^W}], C \rangle = \int_C  \theta_{\varphi^V_{2}}
  - \int_{\partial C} \theta_{\phi_1^W}.
 \end{equation}
-In this way, we obtain an extension of the geometric theta lift which captures the non-compact situation.
+In this way, we obtain an extension of the geometric theta lift
+which captures the non-compact situation.
 
-To describe the geometric interpretation of this extension, we study the cycle $C_n$ at the boundary $\partial \overline{X}$ (Section~\ref{capped-cycles}). The intersection of $C_n$ with $\partial \overline{X}$ is a union of circles contained in the torus fibers of Sol. But rationally such circles are homologically trivial. Hence we can find a (suitably normalized) rational $2$-chain $A_n$ in $\partial \overline{X}$ whose boundary is the boundary of $C_n$ in $\partial \overline{X}$. ``Capping'' off $C_n$ by $A_n$, we obtain a {\it closed} cycle $C_n^c$ in $\overline{X}$ defining a class in $H_2({X},\Q)$. Our main result is the extension of \eqref{KM-id}:
+To describe the geometric interpretation of this extension, we study
+the cycle $C_n$ at the boundary $\partial \overline{X}$
+(Section~\ref{capped-cycles}). The intersection of $C_n$ with
+$\partial \overline{X}$ is a union of circles contained in the torus
+fibers of Sol. But rationally such circles are homologically trivial.
+Hence we can find a (suitably normalized) rational $2$-chain $A_n$
+in $\partial \overline{X}$ whose boundary is the boundary of $C_n$
+in $\partial \overline{X}$. ``Capping'' off $C_n$ by $A_n$, we
+obtain a {\it closed} cycle $C_n^c$ in $\overline{X}$ defining a
+class in $H_2({X},\Q)$. Our main result is the extension of
+\eqref{KM-id}:
 \begin{theorem}\label{FMHZ-main} (Theorem~\ref{FM-main-th})
  Let $C$ be a relative cycle in $\overline{X}$. Then
 \[
 \langle [\theta_{\varphi^V_{2}}, \theta_{\phi_1^W}], C \rangle  = \sum_{n \geq 0} (C_n^c \cdot C)q^n
 \]
-is a holomorphic modular form of weight $2$ and is equal to the generating series of the  intersection numbers with the capped cycles $C^c_n$. (Similarly for the pairing with an arbitrary closed $2$-form on $\overline{X}$ representing a class in $H^2(X)$).
+is a holomorphic modular form of weight $2$ and is equal to the
+generating series of the  intersection numbers with the capped
+cycles $C^c_n$. (Similarly for the pairing with an arbitrary closed
+$2$-form on $\overline{X}$ representing a class in $H^2(X)$).
 \end{theorem}

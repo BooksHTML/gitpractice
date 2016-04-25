@@ -1,11 +1,32 @@
 \subsection{Rationality of the cap}\label{rat-cap11}
-We will now prove Proposition \ref{rat-cap}.  In fact we will show that it holds for any circle $\alpha$ contained in a torus fiber of $e(P)$ and passing through a rational point. We would like to thank Misha Kapovich for simplifying  our original argument. The idea is to construct, for each component of $\partial C_x$, a $2$-chain $A$ with that component as boundary so that $A$ is a sum $P+ T  +\mathcal{M}(\gamma_0)$ of three simplicial $2$-chains in $M$. We then verify that the "parallelogram" $P$  and the "triangle" $T$  have rational area and the period of $\Omega$ over the "monodromy chain" $\mathcal{M}(\gamma_0)$ is zero. 
+We will now prove Proposition \ref{rat-cap}.  In fact we will show
+that it holds for any circle $\alpha$ contained in a torus fiber
+of $e(P)$ and passing through a rational point. We would like to
+thank Misha Kapovich for simplifying  our original argument. The
+idea is to construct, for each component of $\partial C_x$, a
+$2$-chain $A$ with that component as boundary so that $A$ is a sum
+$P+ T  +\mathcal{M}(\gamma_0)$ of three simplicial $2$-chains in
+$M$. We then verify that the "parallelogram" $P$  and the "triangle"
+$T$  have rational area and the period of $\Omega$ over the "monodromy
+chain" $\mathcal{M}(\gamma_0)$ is zero.
 
-In what follows we will pass from pictures in the plane involving directed line segments, triangles and parallelograms to identities in the space of simplicial $1$-chains $C_1(T^2)$  on $T^2$. The principal behind this is that any $k$-dimensional subcomplex $S$ of a simplicial complex $Y$ which is the fundamental cycle of an oriented $k$-submanifold $|S|$ (possibly with boundary) of $Y$ corresponds in a {\it unique} way to a sum of oriented $k$-simplices in $C_k(Y)$.
+In what follows we will pass from pictures in the plane involving
+directed line segments, triangles and parallelograms to identities
+in the space of simplicial $1$-chains $C_1(T^2)$  on $T^2$. The
+principal behind this is that any $k$-dimensional subcomplex $S$
+of a simplicial complex $Y$ which is the fundamental cycle of an
+oriented $k$-submanifold $|S|$ (possibly with boundary) of $Y$
+corresponds in a {\it unique} way to a sum of oriented $k$-simplices
+in $C_k(Y)$.
 
 
 
-In this subsection we will work with a general $3$-manifold $M$ with Sol geometry. Of course this includes all the manifolds $e'(P)$ that occur in this paper. Let $f \in \SL(2,\Z)$ be a hyperbolic element. We will then consider the $3$-manifold $M$ obtained from $ \R \times T^2$ (with the $2$-torus $T^2 = W/ \Z^2$) given by the relation
+In this subsection we will work with a general $3$-manifold $M$
+with Sol geometry. Of course this includes all the manifolds $e'(P)$
+that occur in this paper. Let $f \in \SL(2,\Z)$ be a hyperbolic
+element. We will then consider the $3$-manifold $M$ obtained from
+$ \R \times T^2$ (with the $2$-torus $T^2 = W/ \Z^2$) given by the
+relation
 \begin{equation}\label{glueing}
 (s,w) \sim (s+1,f(w)).  
 \end{equation}
@@ -13,27 +34,55 @@ We let $\pi: \R\times T^2 \to M$ be the resulting infinite cyclic covering.
 
 
 
-We now define notation we will use below. We will use Greek letters to denote closed geodesics on $T^2$, a subscript $c$  will indicate that the geodesic starts at the point $c$ on $T^2$. We will use the analogous notation for geodesic arcs on $W$.  We will use $[\alpha]$ 
+We now define notation we will use below. We will use Greek letters
+to denote closed geodesics on $T^2$, a subscript $c$  will indicate
+that the geodesic starts at the point $c$ on $T^2$. We will use the
+analogous notation for geodesic arcs on $W$.  We will use $[\alpha]$
 to denote the corresponding homology class of a closed geodesic $\alpha$ on $T^2$. 
-If $x$ and $y$ are points on $W$ we will use $\overline{xy}$ to denote the oriented line segment joining $x$ to $y$ and $\overrightarrow{xy}$ to denote the corresponding (free) vector
+If $x$ and $y$ are points on $W$ we will use $\overline{xy}$ to
+denote the oriented line segment joining $x$ to $y$ and
+$\overrightarrow{xy}$ to denote the corresponding (free) vector
 i.e. the equivalence class of $\overline{xy}$ modulo parallel translation. 
    
-We first take care of the fact that $\alpha$ does not necessarily pass through the origin. For convenience we will assume $\alpha$ is in the fiber over the base-point $z(x)$ corresponding to $s=0$. Let $\alpha_0$ be the parallel translate of $\alpha$ to the origin. Then we can find a cylinder $P$, image of an oriented parallelogram $\widetilde{P}$ under the universal cover $W \to T^2$ with rational vertices, such that in $Z_1(T^2,\Q)$, the group of rational $1$-cycles, we have
+We first take care of the fact that $\alpha$ does not necessarily
+pass through the origin. For convenience we will assume $\alpha$
+is in the fiber over the base-point $z(x)$ corresponding to $s=0$.
+Let $\alpha_0$ be the parallel translate of $\alpha$ to the origin.
+Then we can find a cylinder $P$, image of an oriented parallelogram
+$\widetilde{P}$ under the universal cover $W \to T^2$ with rational
+vertices, such that in $Z_1(T^2,\Q)$, the group of rational $1$-cycles,
+we have
 \begin{equation}\label{firstrectangle}
 \partial P = \alpha - \alpha_0.
 \end{equation}
-Since $\widetilde{P}$ has rational vertices we find $\int_{P} \Omega = \int_{\widetilde{P}} \Omega \in \Q$.
+Since $\widetilde{P}$ has rational vertices we find $\int_{P} \Omega
+= \int_{\widetilde{P}} \Omega \in \Q$.
 
-Now we take care of the harder part of finding $A$ as above. The key is the construction  of "monodromy $2$-chains".  For any closed geodesic $\gamma_0 \subset T^2$ starting at $0$ we define the monodromy $2$-chain  $\mathcal{M}(\gamma_0)$ to be the image of the cylinder $\gamma_0 \times [0,1] \subset T^2 \times \R$ in $M$.
+Now we take care of the harder part of finding $A$ as above. The
+key is the construction  of "monodromy $2$-chains".  For any closed
+geodesic $\gamma_0 \subset T^2$ starting at $0$ we define the
+monodromy $2$-chain  $\mathcal{M}(\gamma_0)$ to be the image of the
+cylinder $\gamma_0 \times [0,1] \subset T^2 \times \R$ in $M$.
 The reader will verify using \eqref{glueing} that in $Z_1(T^2,\Q)$ we have 
 \begin{equation} \label{boundaryofmon}
  \partial \mathcal{M}(\gamma_0) = f^{-1}(\gamma_0) -\gamma_0.
 \end{equation}
-Since $f$ preserves the origin, the geodesic $f^{-1}(\gamma_0)$ is also a closed geodesic starting at the origin. Since $f^{-1}$ is hyperbolic we have $|\tr(f^{-1})| >2$ and hence $\det(f^{-1} -I)=  det( I - f) = \tr(f) -2 \neq 0$. Put $N= \det(f^{-1} -I)$ and define $[\gamma_0] \in H_1(T^2,\Z)$ by  
+Since $f$ preserves the origin, the geodesic $f^{-1}(\gamma_0)$ is
+also a closed geodesic starting at the origin. Since $f^{-1}$ is
+hyperbolic we have $|\tr(f^{-1})| >2$ and hence $\det(f^{-1} -I)=
+det( I - f) = \tr(f) -2 \neq 0$. Put $N= \det(f^{-1} -I)$ and define
+$[\gamma_0] \in H_1(T^2,\Z)$ by
 \begin{equation}\label{invertmatrix}
 f^{-1}([\gamma_0]) -[\gamma_0] = N[\alpha_0]. 
 \end{equation}
-Note that $[\gamma_0] = N \{(f^{-1} - I)^{-1} ([\alpha_0] \}$ is necessarily an integer homology class. Also note that is an equation in the first {\it homology}, it is not an equation in the group of $1$-cycles $Z_1(T^2,\Q)$. Since any homology class contains a unique closed geodesic starting at the origin we obtain a closed geodesic $\gamma_0 \in [\gamma_0]$  and a corresponding  monodromy $2$-chain $\mathcal{M}(\gamma_0)$ whence \eqref{boundaryofmon} holds in $Z_1(T^2,\Q)$. We now solve
+Note that $[\gamma_0] = N \{(f^{-1} - I)^{-1} ([\alpha_0] \}$ is
+necessarily an integer homology class. Also note that is an equation
+in the first {\it homology}, it is not an equation in the group of
+$1$-cycles $Z_1(T^2,\Q)$. Since any homology class contains a unique
+closed geodesic starting at the origin we obtain a closed geodesic
+$\gamma_0 \in [\gamma_0]$  and a corresponding  monodromy $2$-chain
+$\mathcal{M}(\gamma_0)$ whence \eqref{boundaryofmon} holds in
+$Z_1(T^2,\Q)$. We now solve
 
 \begin{problem}
 Find an equation in $Z_1(T^2,\Z)$ which descends to  \eqref{invertmatrix}. 
