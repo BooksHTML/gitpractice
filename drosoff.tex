@@ -1,36 +1,49 @@
-
-
-We will prove that given a cycle $c$ that bounds rationally then linking duals for $c$  exist for all tubular neighborhoods $U$ of $c$.  Let $\eta$ be a Thom form for $c$
-compactly supported in $U$. This means that $\eta$ is closed and has integral $1$ over any normal disk to $c$. Let $\eta_M$ be the extension of $\eta$ to $M$ by zero.  It is standard in topology (the extension of the Thom class by zero is the Poincar\'e dual of the zero section of the normal bundle) that the form  $\eta_M$ represents the $2$-dimensional cohomology class on $M$ which is Poincar\'e dual to $c$. Since $c$ is a rational boundary there exists a $1$-form $\beta$ on $M$ such that $d \beta = \eta_M$. We will now see that $\beta$ is a linking dual of $c$.  To this end,  suppose  $a$ is a $1$-cycle in $M -U$ which is a rational boundary in $M$, hence there exists a rational
-chain $A$ with $\partial A = a$.  We may suppose $\eta_M$ vanishes in a neighborhood $V$ of $a$ which is disjoint from $U$ .  Then the restriction $\eta_{M-V}$ of $\eta_M$ to $M-V$ represents the (relative) Poincar\'e dual of the absolute cycle $c$ in $(M-V, \partial (M-V))$. Using this
-the reader will show that
+We will prove that if $c$ is a cycle that bounds rationally, then linking
+duals for $c$ exist for all tubular neighborhoods $U$ of $c$. Let $\eta$ be
+a Thom form for $c$ that is compactly supported in $U$. This means that
+$\eta$ is closed and has integral $1$ over any normal disk to $c$. Let
+$\eta_M$ be the extension of $\eta$ to $M$ by zero. It is standard in
+topology that the extension of the Thom class by zero is the Poincar\'e dual of
+the zero section of the normal bundle. Hence, the form $\eta_M$ represents the
+$2$-dimensional cohomology class on $M$ that is Poincar\'e dual to $c$.
+Since $c$ is a rational boundary, there exists a $1$-form $\beta$ on $M$ such
+that $d \beta = \eta_M$. We will now see that $\beta$ is a linking dual of
+$c$. To this end, suppose $a$ is a $1$-cycle in $M - U$ which is a rational
+boundary in $M$, so that there exists a rational chain $A$ with $\partial A =
+a$. We may suppose $\eta_M$ vanishes in a neighborhood $V$ of $a$ which is
+disjoint from $U$. Then the restriction $\eta_{M-V}$ of $\eta_M$ to $M - V$
+represents the (relative) Poincar\'e dual of the absolute cycle $c$ in $(M - V,
+\partial (M-V))$. Using this, the reader will show that
 \begin{equation*} \label{firstequation}
- \int_A \eta_M = \int_{A \cap (M-V)} \eta_{M-V}  = A \cdot c = \Lk(a,c).
+    \int_A \eta_M = \int_{A \cap (M-V)} \eta_{M-V} = A \cdot c = \Lk(a,c).
 \end{equation*}
- Note that restriction of $\beta$ to $M-U$ is closed. Then
-\[
-\int_a \beta  = \int_A \eta_M = \Lk(a,c).
-\]
-Hence we have 
+Note that restriction of $\beta$ to $M-U$ is closed. Then
+\begin{equation*}
+    \int_a \beta = \int_A \eta_M = \Lk(a,c).
+\end{equation*}
+The next proposition is an immediate consequence.
 \begin{proposition} \label{linkingdualprop}
 $\beta$ is a linking dual of $c$. 
 \end{proposition}
-\ \\[12pt] 
-\textbf{6.3.4 The $1$-form $e^{2 \pi n} \tilde{\psi'}_{0,1}(n)$ is a linking dual of $(\partial C_n)_P$} 
-\\[10pt]
-We now return to the case in hand. In what follows, we drop subscript and superscript $P$'s since we are fixing a boundary component $e(P)$.
-We let $F_n$ be the union of the fibers containing components of $\partial C_n$, and we let $F_x$ be the fiber containing $c_x$. Recall that $c_x$ is the image of $D_x \cap e(P)$ in $e'(P)$. 
+
+% \textbf{6.3.4 The $1$-form $e^{2 \pi n} \tilde{\psi'}_{0,1}(n)$ is a linking dual of $(\partial C_n)_P$} 
+
+We now return to the case in hand. In what follows, we drop subscript and
+superscript $P$ since we are fixing a boundary component $e(P)$. We let
+$F_n$ be the union of the fibers containing components of $\partial C_n$, and
+we let $F_x$ be the fiber containing $c_x$. Recall that $c_x$ is the image of
+$D_x \cap e(P)$ in $e'(P)$.
 
 \begin{theorem}\label{linking-dual}
 Let $n>0$. The $1$-form $e^{2 \pi n} \tilde{\psi'}_{0,1}(n)$ is a linking dual for $\partial C_n$ in $e'(P)$ relative to any neighborhood
-$U$ of $F_n$.  Hence, for $c$ a rational $1$-boundary in $e'(P)$ which is disjoint from $F_n$ we have
+$U$ of $F_n$. Hence, for $c$ a rational $1$-boundary in $e'(P)$ which is disjoint from $F_n$ we have
 \begin{equation}\label{Linkingdualintegral}
-\int_c  \tilde{\psi'}_{0,1}(n) =  \Lk(\partial C_n,c) e^{- 2 \pi n}. 
+\int_c \tilde{\psi'}_{0,1}(n) = \Lk(\partial C_n,c) e^{- 2 \pi n}. 
 \end{equation}
 Furthermore, \eqref{Linkingdualintegral} holds when $c=c_y$ contained in one fiber $F_x$ of $\partial C_n$.
 \end{theorem}
 
-We will first deal with the case in which $c$ is disjoint from $F_n$ (which we will refer to in what follows as  case (i)), then at the end of this section  we will reduce the case in which $c=c_y$ (which we will refer to as case (ii)) to case (i) by a Stokes' Theorem argument.
+We will first deal with the case in which $c$ is disjoint from $F_n$ (which we will refer to in what follows as case (i)), then at the end of this section we will reduce the case in which $c=c_y$ (which we will refer to as case (ii)) to case (i) by a Stokes' Theorem argument.
 Thus we will now assume we are in case (i).
 
 
@@ -52,61 +65,62 @@ and $\tilde{\psi'}_{0,1}(n)$ has bidegree $(0,1)$ (here we use the obvious base/
 
 \begin{lemma}\label{LemmaA}
 Under the hypothesis on $\eta$ in Proposition~\ref{finalintegral} we have
-\[
+\begin{equation*}
  \int_{A_n} \eta = \sum_{ \substack{x\in \G_M \back \mathcal{L}_W \\ (x,x)=2n}} \min_{\la \in \Lambda_W} {\hspace{-5pt}'} |(\la,x)| \int_{a_x} \eta
-\]
+\end{equation*}
 \end{lemma}
 
 \begin{proof}
-We use Lemma~\ref{LemmaB}. Write $\eta = d \omega$ for some $1$-form $\omega$ which by the support condition on $\eta$ is closed in $F_n$. Since $c_{x+ku}$ and  $c_x$ are parallel hence homologous circles in $F_x$, we see $\int_{a_{x+ku}} \eta = \int_{c_{x+ku}} \omega = \int_{c_x} \omega = \int_{a_x} \eta$. 
+We use Lemma~\ref{LemmaB}. Write $\eta = d \omega$ for some $1$-form $\omega$ which by the support condition on $\eta$ is closed in $F_n$. Since $c_{x+ku}$ and $c_x$ are parallel hence homologous circles in $F_x$, we see $\int_{a_{x+ku}} \eta = \int_{c_{x+ku}} \omega = \int_{c_x} \omega = \int_{a_x} \eta$. 
 \end{proof}
 
 
 Since 
-\[
+\begin{equation*}
 \tilde{\psi'}_{0,1}(n) = \sum_{ \substack{x\in \G_M \back \mathcal{L}_W \\ (x,x)=2n}} \sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}(x),
-\]
+\end{equation*}
 Proposition~\ref{finalintegral} will now follow from
 
 \begin{proposition}
 Under the hypothesis on $\eta$ in Proposition~\ref{finalintegral}, we have for any positive length vector $x \in \calL_W$
-\[
-\int_{e'(P)} \eta \wedge  \sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}(x) = (\min_{\la \in \Lambda_W}   {\hspace{-2pt}'}|(\la,x)|) \left(\int_{a_x} \eta \right) e^{-\pi (x,x)}.
-\]
+\begin{equation*}
+\int_{e'(P)} \eta \wedge \sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}(x) = (\min_{\la \in \Lambda_W}  {\hspace{-2pt}'}|(\la,x)|) \left(\int_{a_x} \eta \right) e^{-\pi (x,x)}.
+\end{equation*}
 \end{proposition}
 
 
 \begin{proof}
 By choosing appropriate coordinates we can assume that $x = \mu e_2$ with $\mu = \pm \sqrt{2n}$, so that the singularity of $\sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}(x)$ in $e'(P)$ occurs at $s=0$. 
 We pick a tubular neighborhood $U_\eps= (-\eps,\eps) \times T^2$ in $e'(P)$ around $F_x$. Then we have first
-\[
-\int_{e'(P)} \eta \wedge  \sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}^P(x)= 
-  \lim_{\epsilon \to 0} \int_{e'(P) - U_{\eps}} \eta \wedge   \sum_{ \g \in \G_M} \g^{\ast}\tilde{\psi'}_{0,1}^P(x).
- \]
+\begin{equation*}
+\int_{e'(P)} \eta \wedge \sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}^P(x)= 
+ \lim_{\epsilon \to 0} \int_{e'(P) - U_{\eps}} \eta \wedge  \sum_{ \g \in \G_M} \g^{\ast}\tilde{\psi'}_{0,1}^P(x).
+\end{equation*}
 Since $\eta \wedge \tilde{\psi'}_{0,1}(x) = d(\omega \wedge \tilde{\psi'}_{0,1}(x))$ outside $U_{\eps}$ and $\partial (e'(P) - U_{\eps}) =
-- \partial U_{\eps}$   we see by Stokes' theorem
+- \partial U_{\eps}$  we see by Stokes' theorem
 \begin{align}\label{calcAA1}
-&\int_{e'(P) - U_{\eps}} \eta \wedge  \sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}(x)
-= - \int_{\partial U_{\eps}} \omega \wedge   \sum_{ \g \in \G_M} \g^{\ast}\tilde{\psi'}_{0,1}(x) \\
-& \quad = \sum_{ \g \in \G_M}  \int_{T^2} \left[\omega(-\eps,w) \wedge \tilde{{\psi'}_{0,1}}(\g^{-1}x,-\epsilon,w) - 
+&\int_{e'(P) - U_{\eps}} \eta \wedge \sum_{ \g \in \G_M} \g^{\ast} \tilde{\psi'}_{0,1}(x)
+= - \int_{\partial U_{\eps}} \omega \wedge  \sum_{ \g \in \G_M} \g^{\ast}\tilde{\psi'}_{0,1}(x) \\
+& \quad = \sum_{ \g \in \G_M} \int_{T^2} \left[\omega(-\eps,w) \wedge \tilde{{\psi'}_{0,1}}(\g^{-1}x,-\epsilon,w) - 
 \omega(\eps,w) \wedge \tilde{\psi'}_{0,1}(\g^{-1} x,\epsilon,w) \right]. \notag
 \end{align}
 For $\g \ne 1$ we note that $\omega(s,w) \wedge \tilde{\psi'}_{0,1}(\g^{-1}x,s,w)$ is continuous at $s=0$, while for $\g=1$, we have
 \begin{equation}\label{psi'formula}
- \tilde{\psi'}_{0,1}(\mu e_2,s,w) =  \frac12|\mu| (\sgn(s)dw_2-dw_3) e^{- \pi \mu^2}.
+ \tilde{\psi'}_{0,1}(\mu e_2,s,w) = \frac12|\mu| (\sgn(s)dw_2-dw_3) e^{- \pi \mu^2}.
  \end{equation}
-Hence taking the limit in the last term of  \eqref{calcAA1} we obtain 
-\[
-|\mu| e^{- \pi \mu^2}\int_{T^2} \omega_3(0,w) dw_2dw_3 = |\mu|  e^{- \pi \mu^2}\int_{T^2/ c_{e_2}} \left( \int_{c_{e_2}} \omega(0,w_2,w_3) \right) dw_2.
- \]In the expression $T^2/ c_{e_2}$ (and for the rest of this proof)  we have abused notation and identified the cycle $c_{e_2}$ with the subgroup $0 \times S^1$ of $T^2$.
+Hence taking the limit in the last term of \eqref{calcAA1} we obtain 
+\begin{equation*}
+|\mu| e^{- \pi \mu^2}\int_{T^2} \omega_3(0,w) dw_2dw_3 = |\mu| e^{- \pi \mu^2}\int_{T^2/ c_{e_2}} \left( \int_{c_{e_2}} \omega(0,w_2,w_3) \right) dw_2.
+\end{equation*}
+ In the expression $T^2/ c_{e_2}$ (and for the rest of this proof) we have abused notation and identified the cycle $c_{e_2}$ with the subgroup $0 \times S^1$ of $T^2$.
 
 Here $\omega_3$ is the $dw_3$ component of $\omega$ and we used that $\partial D_{x}$ is the $w_3$-line in $W$. Note that the inner integral on the right is the period 
 of $\omega$ over (homologous) horizontal translates of the cycle $c_{e_2}$. But the restriction of $\omega$ to $F_x$ is closed so $\int_{c_{e_2}} \omega(0,w_2,w_3)$ is independent of $w_2$ and the last integral becomes
-$\left(  \int_{T^2/ c_{e_2}} dw_2 \right)\left( \int_{c_{e_2}} \omega \right)e^{- \pi \mu^2}$. 
+$\left( \int_{T^2/ c_{e_2}} dw_2 \right)\left( \int_{c_{e_2}} \omega \right)e^{- \pi \mu^2}$. 
  But $\int_{c_{e_2}} \omega = \int_{A_{e_2}} \eta$. The proposition is then a consequence of
-\[
-|\mu| \int_{T^2/ \partial c_{e_2}} dw_2  = |\mu|  \min_{\la \in \Lambda_W}  {\hspace{-2pt}'} |(\la,e_2)| = \min_{\la \in \Lambda_W}  {\hspace{-2pt}'} |(\la,x)|,
-\] 
-which follows from the fact that the map $W \to \R$ given by $w \mapsto (w,e_2)$ induces an isomorphism $T^2/ \partial C_{e_2} \simeq \R / \min_{\la \in \Lambda_W}'|(\la,e_2)|)\Z$.  
+\begin{equation*}
+|\mu| \int_{T^2/ \partial c_{e_2}} dw_2 = |\mu| \min_{\la \in \Lambda_W} {\hspace{-2pt}'} |(\la,e_2)| = \min_{\la \in \Lambda_W} {\hspace{-2pt}'} |(\la,x)|,
+\end{equation*} 
+which follows from the fact that the map $W \to \R$ given by $w \mapsto (w,e_2)$ induces an isomorphism $T^2/ \partial C_{e_2} \simeq \R / \min_{\la \in \Lambda_W}'|(\la,e_2)|)\Z$. 
 
 \end{proof}
