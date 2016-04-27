@@ -3,14 +3,14 @@
 We can also realize $M$ in terms of an isotropic basis $u_2,u_2'$ of  $W_{\R}$ as 
 \[
 {M} = 
-\{ m'(s)=
+\left\{ m'(s)=
 \begin{pmatrix}
 1& &  \\ 
  &    \begin{smallmatrix} s &  \\  & s^{-1}
  \end{smallmatrix}     &  \\
  &         & 1\\
 \end{pmatrix}; \, s \in \R_+
- \}, 
+ \right\}, 
 \]
 so that $m(s) =  m'(e^s)$. Note $M \simeq \SO_0(W_{\R})$. We write $\frak{n},\frak{a},\frak{m}$ for their Lie algebras. 
 
@@ -19,8 +19,8 @@ so that $m(s) =  m'(e^s)$. Note $M \simeq \SO_0(W_{\R})$. We write $\frak{n},\fr
 
 The $P$-invariant extensions of the pullback of the $\omega_{\alpha\mu}$'s under the natural map $\sigma: \frak{n}\frak{a}\frak{m} \to \frak{g} \to \frak{g}/\frak{k} \simeq \frak{p}$ are given by
 \begin{align*}
- \sigma^{\ast} \omega_{13}  = \frac12( - \frac{dw}{s't} + \frac{dw'}{t/s'}), \quad \sigma^{\ast} \omega_{14}  = \frac{dt}{t}, \quad
-  \sigma^{\ast} \omega_{24} = \frac12(  \frac{dw}{s't} + \frac{dw'}{t/s'}),  \quad \sigma^{\ast} \omega_{23}= \frac{ds'}{s'}.
+ \sigma^{\ast} \omega_{13}  = \frac12\left( - \frac{dw}{s't} + \frac{dw'}{t/s'}\right), \quad \sigma^{\ast} \omega_{14}  = \frac{dt}{t}, \quad
+  \sigma^{\ast} \omega_{24} = \frac12\left(  \frac{dw}{s't} + \frac{dw'}{t/s'}\right),  \quad \sigma^{\ast} \omega_{23}= \frac{ds'}{s'}.
 \end{align*}
 Here we picked coordinates for $W_{\R}$ by setting $w= wu_2+w'u_2'$. 
 
@@ -30,9 +30,9 @@ Here we picked coordinates for $W_{\R}$ by setting $w= wu_2+w'u_2'$.
 Of course, it is very well known that $D \simeq \h \times \h$, the product of two upper half planes. To see this in our setting, we choose an isomorphism $V_{\R} \simeq M_2(\R)$ such that $u = \kzxz{1}{0}{0}{0}$ and $u' = \kzxz{0}{0}{0}{1}$ and such that the quadratic form $q(x) = (x,x)/2$ for $ x \in M_2(\R)$ is given by $q(x) = \det(x)$. Note that in this model, we can pick in addition $e_2= \tfrac1{\sqrt{2}}\kzxz{0}{1}{-1}{0}$ and $e_3= \tfrac1{\sqrt{2}}\kzxz{0}{1}{1}{0}$. 
 Then $SL_2(\R) \times SL_2(\R)$ acts on $M_2(\R)$ by $(g_1,g_2)x = g_1x\, {^{t}g_2}$ as isometries, and this realizes the isomorphism $\Spin(2,2) \simeq SL_2{\R} \times SL_2(\R)$. Under this isomorphism, we have 
 \begin{align*}
-a(t) rightarrow (   \kzxz{\sqrt{t}}{}{}{\sqrt{t}^{-1}}, \kzxz{\sqrt{t}}{}{}{\sqrt{t}^{-1}} )&, \qquad \qquad
-m'(s) rightarrow  (   \kzxz{\sqrt{s}}{}{}{\sqrt{s}^{-1}}, \kzxz{\sqrt{s}^{-1}}{}{}{\sqrt{s}} ) \\
-n(w,w')  &rightarrow (   \kzxz{1}{-w}{}{1}, \kzxz{1}{w'}{}{1} )
+a(t) \leftrightarrow \left(   \kzxz{\sqrt{t}}{}{}{\sqrt{t}^{-1}}, \kzxz{\sqrt{t}}{}{}{\sqrt{t}^{-1}} \right)&, \qquad \qquad
+m'(s) \leftrightarrow  \left(   \kzxz{\sqrt{s}}{}{}{\sqrt{s}^{-1}}, \kzxz{\sqrt{s}^{-1}}{}{}{\sqrt{s}} \right) \\
+n(w,w')  &\leftrightarrow \left(   \kzxz{1}{-w}{}{1}, \kzxz{1}{w'}{}{1} \right)
 \end{align*}
 This makes the isomorphism $D \simeq \h \times \h$ explicit. Namely, for $(z_1,z_2)= (x_1+iy_1,x_2+iy_2) \in \h \times \h$ we have
 \[
@@ -55,9 +55,9 @@ An important example is the following. Let $d>0$ be the discriminant of the real
 the Galois involution on $K$. We let $V \subset M_2(K)$ be the space
 of skew-hermitian matrices in $M_2(K)$, i.e., which satisfy $^tx' =-x$. Then the determinant on $M_2(K)$ gives $V$ the structure of a non-degenerate rational quadratic space of signature $(2,2)$ and $\Q$-rank $1$. We define the integral skew-hermitian matrices by 
 \begin{equation*}
-L = \{ x = ( \begin{smallmatrix} a\sqrt{d}&\lambda\\-\lambda'&b\sqrt{d}
-  \end{smallmatrix}  ) \; : \; a,b \in \Z, \; \lambda  \in
-  \mathcal{O}_K \}.
+L = \left\{ x = \left( \begin{smallmatrix} a\sqrt{d}&\lambda\\-\lambda'&b\sqrt{d}
+  \end{smallmatrix}  \right) \; : \; a,b \in \Z, \; \lambda  \in
+  \mathcal{O}_K \right\}.
 \end{equation*}
  Then $L$ is a lattice of level $d$. We embed $\SL_2(K)$ into $\SL_2{\R} \times \SL_2(\R)$ by $g \mapsto (g,g')$ so that $\SL_2(\mathcal{O}_K)$ acts on $L$ by $\g.x = \g x{^t\g'}$ as isometries. Hirzebruch and Zagier actually considered this case for $d \equiv 1 \pmod{4}$ a prime.
 \end{example}
